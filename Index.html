@@ -1,50 +1,58 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>VIOLÃO DESCOMPLICADO - Melky Santos</title>
 <style>
-body{font-family:Georgia,serif;background:#1a120b;color:#f5e6c8;margin:0;padding:15px}
-h1{text-align:center;color:#FFD700}
-.mestre{background:#2a1f14;border:2px solid #FFD700;border-radius:15px;padding:15px;text-align:center}
-input{width:100%;padding:12px;border-radius:10px;border:none;font-size:18px;margin-top:10px}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:15px}
-.card{background:#3a2a18;padding:15px;border-radius:12px;text-align:center;cursor:pointer;border:1px solid #6b4f2a}
-.card b{font-size:26px;color:#FFD700}
-.diagrama{background:#fff8e1;color:#000;border-radius:12px;padding:15px;margin-top:15px;text-align:center}
-button{background:#FFD700;border:none;padding:12px;width:100%;border-radius:10px;font-weight:bold;margin-top:10px}
-.conselho{background:#fff3cd;color:#333;padding:12px;border-radius:10px;margin-top:10px;font-style:italic}
-.autor{text-align:center;font-size:12px;color:#aaa;margin-top:15px}
-</style></head>
+body{font-family:Arial,sans-serif;background:#FFF8E1;margin:0;padding:0;text-align:center}
+.topo{background:#2E1A0E;color:#FFD700;padding:25px 15px}
+.topo h1{margin:0;font-size:32px}
+.topo p{font-size:16px;color:#fff}
+.velho{background:#fff;border:3px solid #FFD700;margin:15px;padding:15px;border-radius:15px}
+.velho h2{color:#8B4513;margin:0}
+.botoes{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;padding:10px}
+button{font-size:22px;font-weight:bold;padding:15px 25px;border-radius:12px;border:none;background:#8B4513;color:white;cursor:pointer}
+button:active{background:#FFD700;color:black}
+#conselho{background:#fff;border:3px solid #8B4513;margin:15px;padding:20px;border-radius:15px;min-height:120px;font-size:19px;line-height:1.5}
+.whats{display:block;background:#25D366;color:white;text-decoration:none;font-weight:bold;font-size:20px;padding:16px;margin:15px;border-radius:30px}
+</style>
+</head>
 <body>
-<div class="mestre">
+<div class="topo">
 <h1>🎸 VIOLÃO DESCOMPLICADO</h1>
-<h2 style="color:#FFD700;margin:0">Melky Santos</h2>
+<p><b>Melky Santos</b></p>
 <p>"Meu filho, senta aqui que o velho vai te ensinar.<br>40 anos de estrada, eu sei onde tu vai errar."</p>
 </div>
-<input id="busca" placeholder="Pergunta pro Mestre Melky... Ex: C, G, F" oninput="filtrar()">
-<div id="lista" class="grid"></div>
-<div id="detalhe"></div>
-<p class="autor">VIOLÃO DESCOMPLICADO © Melky Santos - Todos os direitos reservados</p>
+
+<div class="velho">
+<h2>👴 CONSELHO DO VELHO</h2>
+<p>Clica num acorde aqui embaixo que o velho te fala!</p>
+</div>
+
+<div class="botoes">
+<button onclick="mostrar('C')">C</button>
+<button onclick="mostrar('G')">G</button>
+<button onclick="mostrar('Am')">Am</button>
+<button onclick="mostrar('F')">F</button>
+<button onclick="mostrar('D')">D</button>
+<button onclick="mostrar('Em')">Em</button>
+</div>
+
+<div id="conselho">👆 Clica num acorde aí em cima pra ver o conselho do velho aparecer aqui!</div>
+
+<a class="whats" href="https://wa.me/5575999999999?text=Quero%20aprender%20violao%20com%20o%20Mestre%20Melky">🟢 QUERO APRENDER AGORA NO WHATSAPP</a>
+
 <script>
-const acordes=[
-{name:"C",tipo:"Maior",pos:"x32010",fala:"Meu filho, esse C é o primeiro que todo mundo aprende. Bota o dedo com firmeza, não deixa chiar.",conselho:"Se chiar, é teu dedo encostando na corda de baixo. Levanta o pulso, meu filho."},
-{name:"G",tipo:"Maior",pos:"320003",fala:"Esse G é o acorde do sertanejo, do forró. Aprendeu ele, tu já toca 100 músicas.",conselho:"Não aperta com pressa. Aperta, toca corda por corda e escuta."},
-{name:"D",tipo:"Maior",pos:"xx0232",fala:"Esse D é clarinho, meu filho. Parece sino de igreja.",conselho:"Só toca as 4 cordas de baixo. As de cima não entram."},
-{name:"E",tipo:"Maior",pos:"022100",fala:"Esse E é o do rock, meu filho. Bota com força.",conselho:"Treina a troca de E pra A, que é a base de tudo."},
-{name:"A",tipo:"Maior",pos:"x02220",fala:"Esse A é aconchegante. Serve pra tudo.",conselho:"Junta os 3 dedos bem juntinhos, senão chia."},
-{name:"F",tipo:"Pestana",pos:"133211",fala:"Ahh o F... todo mundo sofre nele, meu filho. Eu sofri 1 mês. Tu vai sofrer 15 dias e passa.",conselho:"A pestana tem que ser com o lado do dedo, não com a parte mole. Força no polegar atrás."},
-{name:"Am",tipo:"Menor",pos:"x02210",fala:"Esse é triste, meu filho. É pra tocar quando o coração tá apertado.",conselho:"Som de Am é pra tocar devagar, com sentimento."},
-{name:"Em",tipo:"Menor",pos:"022000",fala:"O mais fácil de todos. 2 dedos só. Se tu errar esse, o velho desiste de tu, viu?",conselho:"Começa por ele sempre que for treinar."},
-{name:"Dm",tipo:"Menor",pos:"xx0231",fala:"Esse Dm é chorado, meu filho. É de música que aperta o peito.",conselho:"Cuidado pra não tocar a corda E grave."},
-{name:"Bm",tipo:"Pestana",pos:"x24432",fala:"Esse Bm é o F que ficou mais difícil, mas tu consegue.",conselho:"Pestana na casa 2. Depois que pegar, tu toca qualquer um."},
-{name:"C7",tipo:"7ª",pos:"x32310",fala:"Esse é blues, meu filho. Bota que já dá vontade de dançar.",conselho:"C7 pede G depois. Decora essa passagem."},
-{name:"G7",tipo:"7ª",pos:"320001",fala:"G7 é pra fechar música, pra dar aquele gostinho de quero mais.",conselho:"Usa no final da música que fica bonito."},
-{name:"D7",tipo:"7ª",pos:"xx0212",fala:"Esse é o cheiro de blues, de bar. Bota que o povo já balança a cabeça.",conselho:"D7 pede pra ir pra G depois. Aprende essa passagem."},
-{name:"Cmaj7",tipo:"Maj7",pos:"x32000",fala:"Esse é som de MPB, de praia, de fim de tarde.",conselho:"Tira o dedo 1 do C normal e vira Maj7. Viu como é fácil?"},
-{name:"Am7",tipo:"m7",pos:"x02010",fala:"Esse é Bossa Nova, meu filho. João Gilberto usava direto.",conselho:"Som leve, toca com os dedos, não com palheta."},
-];
-function mostrar(l){document.getElementById('lista').innerHTML=l.map(a=>`<div class="card" onclick="abrir(${acordes.indexOf(a)})"><b>${a.name}</b><br><span>${a.tipo}</span></div>`).join('')}
-function abrir(i){let a=acordes[i];document.getElementById('detalhe').innerHTML=`<div class="diagrama"><h2>${a.name} - ${a.tipo}</h2><p>Posição: ${a.pos}</p><p><b>FALA DO MESTRE MELKY:</b><br>"${a.fala}"</p><div class="conselho">💡 CONSELHO DE VELHO: ${a.conselho}</div></div><button onclick="alert('Mestre Melky: Muito bem, meu filho! Continua!')">⭐ APRENDI, MESTRE!</button>`;window.scrollTo(0,9999)}
-function filtrar(){let t=document.getElementById('busca').value.toLowerCase();mostrar(acordes.filter(a=>a.name.toLowerCase().includes(t)))}
-mostrar(acordes);
-</script></body></html>
+function mostrar(acorde){
+var c = document.getElementById('conselho');
+if(acorde=='C'){ c.innerHTML="<b>ACORDE C - Dó</b><br><br>Meu filho, esse é o primeiro que tu aprende. Dedo 1 na casa 1, dedo 2 na casa 2. Não aperta com força de ódio não, aperta com carinho que o som sai limpo!"; }
+if(acorde=='G'){ c.innerHTML="<b>ACORDE G - Sol</b><br><br>Esse aqui é o acorde da fogueira! Se tu tocar G, todo mundo canta junto. Treina trocar do C pro G devagar, sem pressa."; }
+if(acorde=='Am'){ c.innerHTML="<b>ACORDE Am - Lá menor</b><br><br>Esse é o acorde da saudade. Quando tu tocar Am, o povo já fica emotivo. É fácil, só 3 dedos juntinhos."; }
+if(acorde=='F'){ c.innerHTML="<b>ACORDE F - Fá - A PESTANA!</b><br><br>CALMA! Todo mundo trava aqui! Não desiste! O segredo: vira o dedo de lado, usa a parte dura do dedo, não a mole. Treina 5 minutinhos por dia que em 1 semana tu consegue! O velho garante!"; }
+if(acorde=='D'){ c.innerHTML="<b>ACORDE D - Ré</b><br><br>Esse é o acorde alegre! Cuidado pra não encostar o dedo nas outras cordas. Dedinho em pé, igual bailarina!"; }
+if(acorde=='Em'){ c.innerHTML="<b>ACORDE Em - Mi menor</b><br><br>O mais fácil de todos! Só 2 dedos! Se tu consegue fazer Em, tu já consegue tocar 100 músicas!"; }
+}
+</script>
+</body>
+</html>
