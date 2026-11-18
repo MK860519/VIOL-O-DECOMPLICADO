@@ -1,0 +1,49 @@
+body{padding-bottom:calc(32px + env(safe-area-inset-bottom))}
+.voltar{display:inline-block;color:var(--green);text-decoration:none;padding:14px 4px 10px;min-height:48px}
+h1{font:800 1.6rem/1.15 system-ui,sans-serif;margin:2px 0 6px}
+h1:focus{outline:none}
+h2{font-size:.95rem;font-weight:700;color:var(--green);margin:26px 0 8px;letter-spacing:.02em;text-transform:uppercase}
+p{margin:0 0 12px}.sub{color:var(--dim)}
+.carregando,.aviso{padding:16px;border-radius:16px;background:var(--panel)}
+.aviso{border:1px solid var(--warn);color:var(--ink);margin:12px 0}
+.painel{background:var(--panel);border:1px solid var(--line);border-radius:24px;padding:18px;margin:12px 0 16px}
+.painel b{font-size:1.1rem}
+.bar{height:10px;border-radius:6px;background:var(--panel2);overflow:hidden;margin-top:10px}
+.bar>i{display:block;height:100%;background:var(--green);border-radius:6px;transition:width .3s}
+.btn{display:flex;align-items:center;justify-content:center;gap:8px;min-height:56px;padding:12px 18px;border-radius:18px;background:var(--panel2);
+ border:2px solid var(--line);color:var(--ink);text-decoration:none;font-weight:700;font-size:1.05rem;width:100%;text-align:center}
+.btn.principal{background:var(--green);border-color:var(--green);color:#06210f;margin-top:14px}
+.btn.principal.feita{background:var(--panel2);color:var(--green)}
+.btn:active{transform:scale(.98)}
+.lista{display:grid;gap:12px;list-style:none;padding:0;margin:0}
+.item{display:block;background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:16px;text-decoration:none;color:inherit}
+.item:active{border-color:var(--green)}
+.item .tag{color:var(--green);font-size:.8rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase}
+.item h3{font-size:1.1rem;margin:2px 0 4px}.item small{color:var(--dim)}
+.aula{display:flex;align-items:center;gap:14px;min-height:64px}
+.aula .ok{flex:none;width:32px;height:32px;border-radius:50%;border:2px solid var(--line);display:grid;place-items:center;font-weight:800;color:#06210f}
+.aula.feita .ok{background:var(--green);border-color:var(--green)}
+.aula h3{margin:0}
+.dica{border-left:4px solid var(--green);background:var(--panel);padding:12px 14px;border-radius:0 14px 14px 0;margin:12px 0}
+ol.passos{margin:0 0 12px;padding-left:1.4rem}ol.passos li{margin:6px 0}
+figure.acorde-fig{margin:14px 0;text-align:center;background:var(--panel);border-radius:20px;padding:12px}
+figure.acorde-fig figcaption{font-weight:800;margin-top:4px}
+svg.acorde{width:150px;max-width:60%;height:auto}
+.acorde .corda,.acorde .traste{stroke:var(--dim);stroke-width:1.5}.acorde .pestana-topo{stroke:var(--ink);stroke-width:4}
+.acorde .dedo,.acorde .barra{fill:var(--green)}.acorde .num{fill:#06210f;font:700 11px system-ui;text-anchor:middle}
+.acorde .marca{fill:none;stroke:var(--ink);stroke-width:1.5}.acorde .x{fill:var(--ink);font:700 12px system-ui;text-anchor:middle}
+.acorde .casa{fill:var(--dim);font:600 10px system-ui}
+.pratica{background:var(--panel);border:1px solid var(--green);border-radius:20px;padding:16px;margin-top:8px}
+.pratica .btn{margin-top:6px}
+.nav{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:20px}.nav .btn{font-size:.95rem}
+.nav .vazio{visibility:hidden}
+.msg{min-height:1.4em;color:var(--warn);margin-top:8px;font-size:.9rem}
+.rodape{color:var(--dim);font-size:.8rem;text-align:center;margin-top:28px}
+
+.exemplo,.objetivo,.criterio{background:var(--panel);border-radius:14px;padding:12px 14px;margin:12px 0}
+.exemplo{border:1px dashed var(--green-d)}.objetivo{border-left:4px solid var(--green);border-radius:0 14px 14px 0}
+.criterio{border:1px solid var(--green);margin-top:18px}
+.ex-tit{font-size:1rem;margin:14px 0 6px}
+ul.erros{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+ul.erros li{background:var(--panel);border-radius:14px;padding:12px 14px}
+ul.erros strong{display:block;margin-bottom:4px}ul.erros span{color:var(--dim)}

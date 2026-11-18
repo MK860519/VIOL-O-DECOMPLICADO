@@ -3,170 +3,20 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Afinador</title>
-<meta name="theme-color" content="#1b1f3b">
+<title>Aprenda Violão · Violão Descomplicado</title>
+<meta name="theme-color" content="#0b120e">
 <link rel="manifest" href="../manifest.webmanifest">
 <link rel="icon" href="../icons/icon-192.png">
 <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-title" content="Afinador">
-<style>
-:root{--bg:#1b1f3b;--panel:#262b50;--ink:#f3eedd;--dim:#8d92b8;--brass:#e0b04c;--ok:#5ed3b0;--warn:#ef8f6b;color-scheme:dark}
-*{box-sizing:border-box;margin:0}
-html,body{height:100%}
-body{background:var(--bg);color:var(--ink);font:16px/1.4 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
- padding:env(safe-area-inset-top) 20px env(safe-area-inset-bottom);display:flex;flex-direction:column;max-width:480px;margin:0 auto}
-header{display:flex;justify-content:space-between;align-items:center;padding:16px 0}
-h1{font:600 1.1rem Georgia,serif;letter-spacing:.02em}
-.modes{display:flex;gap:6px}
-button{font:inherit;color:inherit;background:var(--panel);border:1px solid transparent;border-radius:999px;padding:8px 14px;cursor:pointer}
-button[aria-pressed=true]{border-color:var(--brass);color:var(--brass)}
-button:focus-visible{outline:2px solid var(--brass);outline-offset:2px}
-main{flex:1;display:flex;flex-direction:column;justify-content:center;gap:28px;text-align:center}
-#note{font:400 9rem/1 Georgia,serif;transition:color .15s}
-#sol{color:var(--dim);height:1.4em}
-#hz{color:var(--dim);font-variant-numeric:tabular-nums;height:1.4em}
-.meter{position:relative;height:64px;margin:0 8px}
-.meter .track{position:absolute;left:0;right:0;top:50%;height:2px;background:var(--dim);opacity:.5}
-.meter .tick{position:absolute;top:22px;width:2px;height:20px;background:var(--dim);opacity:.6}
-.meter .tick.c{top:8px;height:48px;background:var(--brass);opacity:1}
-#needle{position:absolute;left:50%;top:4px;width:6px;height:56px;margin-left:-3px;border-radius:3px;background:var(--dim);transition:transform .12s ease-out,background .15s}
-#hint{min-height:1.5em;font-size:1.15rem}
-.strings{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;padding:8px 0 20px}
-.strings button{padding:10px 0;border-radius:14px;display:flex;flex-direction:column;align-items:center;line-height:1.2}
-.strings small{color:var(--dim);font-size:.7rem}
-.on{color:var(--ok)}
-.off #note,.off #needle{opacity:.35}
-#go{align-self:center;background:var(--brass);color:#1b1f3b;font-weight:600;padding:14px 28px;font-size:1.05rem}
-#msg{color:var(--warn);min-height:1.4em;font-size:.9rem}
-.voltar{padding-top:12px}.voltar a{display:inline-block;color:var(--ok);text-decoration:none;padding:10px 4px;font-size:.95rem}
-@media (prefers-reduced-motion:reduce){*{transition:none!important}}
-@media (max-height:640px){#note{font-size:6rem}}
-</style>
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="jornada.css">
 </head>
-<body class="off">
-<nav class="voltar"><a href="../">‹ Início</a></nav>
-<header>
-  <h1>Afinador</h1>
-  <div class="modes" role="group" aria-label="Modo">
-    <button id="mAuto" aria-pressed="true">Violão</button>
-    <button id="mChrom" aria-pressed="false">Cromático</button>
-  </div>
-</header>
-<main>
-  <div>
-    <div id="note">–</div>
-    <div id="sol">&nbsp;</div>
-    <div id="hz">&nbsp;</div>
-  </div>
-  <div class="meter" aria-hidden="true">
-    <div class="track"></div>
-    <div id="ticks"></div>
-    <div id="needle"></div>
-  </div>
-  <div id="hint" aria-live="polite">Toque em “Ligar microfone” e toque uma corda.</div>
-  <button id="go">Ligar microfone</button>
-  <div id="msg" role="alert"></div>
-</main>
-<div class="strings" id="strings" role="group" aria-label="Cordas (toque para fixar uma corda)"></div>
-
-<script>
-const NAMES=['C','C#','D','D#','E','F','F#','G','G#','A','A#','B'];
-const SOLFA={'C':'Dó','D':'Ré','E':'Mi','F':'Fá','G':'Sol','A':'Lá','B':'Si'};
-const STR=[{n:'E',o:2,f:82.407,s:6},{n:'A',o:2,f:110,s:5},{n:'D',o:3,f:146.832,s:4},
-           {n:'G',o:3,f:195.998,s:3},{n:'B',o:3,f:246.942,s:2},{n:'E',o:4,f:329.628,s:1}];
-const $=id=>document.getElementById(id);
-let chrom=false, fixed=null, ctx, analyser, buf, stream, raf, last=0, lastHit=0, hist=[];
-
-// UI das cordas e marcações
-STR.forEach((s,i)=>{const b=document.createElement('button');b.setAttribute('aria-pressed','false');
-  b.innerHTML=`${s.n}<small>${s.s}ª</small>`;b.onclick=()=>{fixed=fixed===i?null:i;chrom=false;sync()};$('strings').append(b)});
-for(let c=-50;c<=50;c+=10){const t=document.createElement('div');t.className='tick'+(c===0?' c':'');
-  t.style.left=`calc(${50+c}% - 1px)`;$('ticks').append(t)}
-function sync(){
-  $('mAuto').setAttribute('aria-pressed',!chrom);$('mChrom').setAttribute('aria-pressed',chrom);
-  [...$('strings').children].forEach((b,i)=>b.setAttribute('aria-pressed',fixed===i));
-}
-$('mAuto').onclick=()=>{chrom=false;sync()};
-$('mChrom').onclick=()=>{chrom=true;fixed=null;sync()};
-
-// Detecção de altura (algoritmo YIN)
-function yin(x,sr){
-  const minT=Math.floor(sr/1000), maxT=Math.floor(sr/60), N=x.length-maxT;
-  const d=new Float32Array(maxT+1);
-  for(let t=minT;t<=maxT;t++){let s=0;for(let i=0;i<N;i++){const v=x[i]-x[i+t];s+=v*v}d[t]=s}
-  let run=0;const n=new Float32Array(maxT+1).fill(1);
-  for(let t=1;t<=maxT;t++){run+=d[t]||0;if(t>=minT)n[t]=d[t]*t/run}
-  let tau=-1;
-  for(let t=minT;t<maxT;t++){if(n[t]<0.15){while(t+1<maxT&&n[t+1]<n[t])t++;tau=t;break}}
-  if(tau<0)return -1;
-  const a=n[tau-1],b=n[tau],c=n[tau+1],den=a-2*b+c;
-  return sr/(tau+(den?0.5*(a-c)/den:0));
-}
-
-function loop(ts){
-  raf=requestAnimationFrame(loop);
-  if(ts-last<40)return; last=ts;
-  analyser.getFloatTimeDomainData(buf);
-  let rms=0;for(const v of buf)rms+=v*v;rms=Math.sqrt(rms/buf.length);
-  let f=-1;if(rms>0.008)f=yin(buf,ctx.sampleRate);
-  if(f>0){hist.push(f);if(hist.length>5)hist.shift();lastHit=ts;
-    show([...hist].sort((a,b)=>a-b)[hist.length>>1])}
-  else if(ts-lastHit>700){hist=[];idle()}
-}
-
-function show(f){
-  let tf,name,sol;
-  if(chrom||(fixed===null&&false)){}
-  if(chrom){
-    const m=Math.round(69+12*Math.log2(f/440));tf=440*2**((m-69)/12);
-    name=NAMES[(m%12+12)%12];
-  }else{
-    let s=fixed!==null?STR[fixed]:STR.reduce((p,q)=>Math.abs(Math.log2(f/q.f))<Math.abs(Math.log2(f/p.f))?q:p);
-    tf=s.f;name=s.n;
-    if(fixed===null)[...$('strings').children].forEach((b,i)=>b.setAttribute('aria-pressed',STR[i]===s));
-  }
-  sol=SOLFA[name]||'';
-  const cents=1200*Math.log2(f/tf), ok=Math.abs(cents)<=5;
-  document.body.classList.remove('off');
-  $('note').textContent=name;$('note').className=ok?'on':'';
-  $('sol').textContent=sol;
-  $('hz').textContent=`${f.toFixed(1)} Hz · ${cents>0?'+':''}${cents.toFixed(0)} cents`;
-  const c=Math.max(-50,Math.min(50,cents));
-  $('needle').style.transform=`translateX(${c/50*(($('needle').parentNode.clientWidth/2)-3)}px)`;
-  $('needle').style.background=ok?'var(--ok)':'var(--warn)';
-  $('hint').textContent=ok?'Afinada ✓':cents<0?'Grave demais: aperte a corda (gire a tarraxa para apertar)':'Aguda demais: afrouxe a corda';
-}
-function idle(){
-  document.body.classList.add('off');$('note').textContent='–';$('note').className='';
-  $('sol').innerHTML='&nbsp;';$('hz').innerHTML='&nbsp;';$('needle').style.transform='';
-  $('needle').style.background='var(--dim)';$('hint').textContent='Toque uma corda…';
-  if(fixed===null&&!chrom)sync();
-}
-
-async function start(){
-  $('msg').textContent='';
-  try{
-    stream=await navigator.mediaDevices.getUserMedia({audio:{echoCancellation:false,noiseSuppression:false,autoGainControl:false}});
-    ctx=new (window.AudioContext||window.webkitAudioContext)();await ctx.resume();
-    analyser=ctx.createAnalyser();analyser.fftSize=4096;buf=new Float32Array(analyser.fftSize);
-    ctx.createMediaStreamSource(stream).connect(analyser);
-    $('go').textContent='Parar';$('hint').textContent='Toque uma corda…';raf=requestAnimationFrame(loop);
-  }catch(e){
-    $('msg').textContent=e.name==='NotAllowedError'
-      ?'Microfone bloqueado. Permita o acesso nas configurações do navegador e tente de novo.'
-      :'Não foi possível usar o microfone. Verifique se o link começa com https://.';
-  }
-}
-function stop(){
-  cancelAnimationFrame(raf);stream&&stream.getTracks().forEach(t=>t.stop());ctx&&ctx.close();
-  stream=ctx=null;hist=[];$('go').textContent='Ligar microfone';idle();$('hint').textContent='Microfone desligado.';
-}
-$('go').onclick=()=>stream?stop():start();
-document.addEventListener('visibilitychange',()=>{if(document.hidden&&stream)stop()});
-sync();
-if('serviceWorker' in navigator)addEventListener('load',()=>navigator.serviceWorker.register('../sw.js').catch(()=>{}));
-</script>
+<body>
+<main id="app"><p class="carregando">Carregando…</p></main>
+<noscript><p class="aviso">Ative o JavaScript para usar a área de aprendizagem.</p></noscript>
+<script type="module" src="js/app.js"></script>
+<script src="../js/pwa.js"></script>
 </body>
 </html>
