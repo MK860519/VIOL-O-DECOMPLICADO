@@ -1,35 +1,21 @@
 {
-  "name": "Violão Descomplicado Melky",
-  "short_name": "Violão Melky",
-  "id": "/",
-  "start_url": "/",
-  "scope": "/",
+  "name": "Violão Descomplicado",
+  "short_name": "Violão",
+  "description": "Aprenda, pratique e evolua: afinador digital e metrônomo digital, grátis e offline.",
+  "lang": "pt-BR",
+  "start_url": "./index.html",
+  "scope": "./",
   "display": "standalone",
   "orientation": "portrait",
-  "lang": "pt-BR",
-  "background_color": "#0b1020",
-  "theme_color": "#111827",
-  "categories": ["music", "education"],
-  "prefer_related_applications": false,
-  "description": "Acordes, afinador, metrônomo, ritmos, campo harmônico e transpositor de cifras.",
+  "background_color": "#0b120e",
+  "theme_color": "#0b120e",
   "icons": [
-    {
-      "src": "/icon-192.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "any"
-    },
-    {
-      "src": "/icon-512.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any"
-    },
-    {
-      "src": "/icon-maskable-512.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "maskable"
-    }
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Afinador digital", "url": "./afinador/", "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192" }] },
+    { "name": "Metrônomo digital", "url": "./metronomo/", "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192" }] }
   ]
 }

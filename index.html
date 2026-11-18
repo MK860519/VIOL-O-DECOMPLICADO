@@ -2,194 +2,41 @@
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#111827">
-<meta name="description" content="Violão Descomplicado Melky: acordes, afinador, metrônomo, ritmos e campo harmônico.">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Violão Descomplicado</title>
+<meta name="description" content="Aprenda, pratique e evolua: afinador digital e metrônomo digital, grátis e offline.">
+<meta name="theme-color" content="#0b120e">
 <link rel="manifest" href="manifest.webmanifest">
-<link rel="icon" href="icon-192.png">
-<link rel="apple-touch-icon" href="apple-touch-icon.png">
-<title>Violão Descomplicado Melky</title>
-<style>
-:root{--bg:#0b1020;--panel:#151d31;--panel2:#1d2942;--text:#f7f8fc;--muted:#aab4c8;--gold:#f5bd4f;--green:#35c98a;--line:#2c3955;--red:#ff7777}
-*{box-sizing:border-box}body{margin:0;background:linear-gradient(160deg,#101a31,#090d18 65%);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;min-height:100vh}
-header{padding:22px 18px 16px;background:rgba(10,15,28,.92);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5;backdrop-filter:blur(12px)}
-.brand{max-width:1100px;margin:auto;display:flex;align-items:center;gap:13px}.logo{width:48px;height:48px;border-radius:15px;background:linear-gradient(135deg,#f6c45e,#e58a2e);display:grid;place-items:center;color:#171717;font-size:25px;font-weight:900}.brand h1{font-size:clamp(18px,4vw,25px);margin:0}.brand p{margin:3px 0 0;color:var(--muted);font-size:12px;letter-spacing:.08em;text-transform:uppercase}
-main{max-width:1100px;margin:auto;padding:20px 16px 50px}.hero{padding:23px;border:1px solid #35415d;border-radius:22px;background:radial-gradient(circle at 90% 0%,#36466b 0,transparent 42%),linear-gradient(130deg,#1c2944,#131a2d);margin-bottom:18px}.hero h2{font-size:clamp(23px,5vw,34px);margin:0 0 8px}.hero p{color:#c6cee0;margin:0;line-height:1.5}.tag{display:inline-block;margin-top:14px;color:#241a08;background:var(--gold);padding:6px 10px;border-radius:99px;font-weight:800;font-size:12px}
-nav{display:flex;gap:8px;overflow:auto;padding:4px 0 14px;scrollbar-width:thin}.tab{border:1px solid var(--line);background:var(--panel);color:var(--muted);padding:11px 14px;border-radius:12px;white-space:nowrap;font-weight:700;cursor:pointer}.tab.active{background:var(--gold);color:#211a0d;border-color:var(--gold)}
-.panel{display:none;background:rgba(21,29,49,.95);border:1px solid var(--line);border-radius:18px;padding:18px;margin-bottom:15px}.panel.active{display:block}.panel h3{margin:0 0 14px;font-size:21px}.muted{color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}.field{display:flex;flex-direction:column;gap:7px}.field label{font-size:13px;color:var(--muted);font-weight:700}input,select{width:100%;padding:12px;border:1px solid var(--line);border-radius:11px;background:#0d1425;color:var(--text);font:inherit}button{font:inherit}.btn{border:0;border-radius:12px;background:var(--gold);color:#201809;font-weight:800;padding:12px 16px;cursor:pointer}.btn.secondary{background:var(--panel2);border:1px solid var(--line);color:var(--text)}.btn:disabled{opacity:.45;cursor:not-allowed}.actions{display:flex;flex-wrap:wrap;gap:9px;margin-top:13px}.chordlist{display:grid;grid-template-columns:repeat(auto-fit,minmax(135px,1fr));gap:10px;margin-top:15px}.chord{background:#0e1628;border:1px solid var(--line);border-radius:13px;padding:12px;text-align:center}.chord strong{display:block;color:var(--gold);font-size:20px;margin-bottom:5px}.diagram{font-family:ui-monospace,monospace;white-space:pre;line-height:1.35;color:#dce5f8;font-size:13px}
-.display{font-size:clamp(38px,10vw,66px);font-weight:900;text-align:center;color:var(--gold);font-variant-numeric:tabular-nums;margin:12px 0}.subdisplay{text-align:center;color:var(--muted);margin-top:-8px}.bigcenter{text-align:center;padding:15px}.beatdot{width:18px;height:18px;border-radius:50%;background:#53617d;display:inline-block;margin:12px 4px}.beatdot.on{background:var(--gold);box-shadow:0 0 20px #f5bd4f}
-.stringrow{display:flex;align-items:center;gap:10px;margin:9px 0}.stringrow span{width:48px;color:var(--muted)}.meter{height:10px;background:#0b1221;border-radius:20px;overflow:hidden;flex:1}.meter i{display:block;height:100%;width:0;background:linear-gradient(90deg,#39cb8c,#f5bd4f,#ff7777);transition:width .08s}.note{font-size:24px;font-weight:900;color:var(--gold);min-width:65px}
-.scalegrid{display:grid;grid-template-columns:repeat(7,1fr);gap:7px;margin-top:14px}.degree{background:#0d1628;border:1px solid var(--line);padding:12px 4px;border-radius:11px;text-align:center}.degree b{display:block;color:var(--gold);font-size:18px}.degree small{color:var(--muted)}
-.lesson{background:#0d1628;border:1px solid var(--line);padding:13px;border-radius:12px;margin:9px 0;line-height:1.5}.footer{text-align:center;color:#78849b;font-size:12px;padding:20px}
-@media(max-width:520px){header{padding:15px 13px}.hero{padding:18px}.panel{padding:14px}.scalegrid{gap:4px}.degree{padding:10px 2px}.degree b{font-size:15px}.degree small{font-size:10px}}
-
-textarea{width:100%;padding:12px;border:1px solid var(--line);border-radius:11px;background:#0d1425;color:var(--text);font:14px ui-monospace,monospace}
-.chord{cursor:pointer;color:inherit}.chord svg{display:block;margin:0 auto 4px;width:84px;height:auto}.chord:active{border-color:var(--gold)}
-.meter{position:relative}.meter::after{content:"";position:absolute;left:50%;top:0;bottom:0;width:2px;background:#ffffff66}
-.meter i{position:absolute;width:12px;height:100%;border-radius:6px;background:var(--gold);transition:left .08s;left:44%}.meter i.ok{background:var(--green)}
-.stringrow .note{font-size:15px;min-width:34px}.stringrow button{padding:6px 10px}
-.prog{margin-top:10px}.prog b{color:var(--gold)}
-button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,.tab:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
-@media(prefers-reduced-motion:reduce){*{transition:none!important}}
-
-#instBar{display:none;position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom,0px));z-index:50;background:#151d31;border:1px solid var(--gold);border-radius:16px;padding:12px 14px;box-shadow:0 8px 30px #000a;align-items:center;gap:12px}
-#instBar.show{display:flex}#instBar div{flex:1;font-size:14px;line-height:1.35}#instBar b{color:var(--gold)}
-#instBar button{border:0;border-radius:11px;padding:11px 16px;font-weight:800;cursor:pointer}
-#instYes{background:var(--gold);color:#1a1205}#instNo{background:transparent;color:var(--muted);padding:11px 8px!important}
-</style>
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Violão">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/home.css">
 </head>
 <body>
-<header><div class="brand"><div class="logo">♫</div><div><h1>Violão Descomplicado Melky</h1><p>Aprenda • pratique • toque</p></div></div></header>
-<main>
-<section class="hero"><h2>Seu violão, sem complicação. 🎸</h2><p>Uma central de estudos e prática musical: consulte acordes, afine o instrumento, marque o tempo, pratique ritmos e descubra os campos harmônicos.</p><span class="tag">VERSÃO 3.0 • APLICATIVO WEB</span></section>
-<nav aria-label="Ferramentas">
-<button class="tab active" data-tab="acordes">Acordes</button><button class="tab" data-tab="afinador">Afinador</button><button class="tab" data-tab="metronomo">Metrônomo</button><button class="tab" data-tab="ritmos">Ritmos</button><button class="tab" data-tab="campo">Campo harmônico</button><button class="tab" data-tab="conta" id="tabConta">Minha conta</button><button class="tab" data-tab="treino">Treino</button><button class="tab" data-tab="transpor">Transpositor</button><button class="tab" data-tab="estudos">Estudos</button>
-</nav>
-<section id="acordes" class="panel active"><h3>📖 Dicionário de acordes</h3><div class="grid">
-<div class="field"><label for="chordSearch">Buscar acorde</label><input id="chordSearch" placeholder="Ex.: C, G, Am, D7"></div>
-<div class="field"><label for="chordType">Categoria</label><select id="chordType"><option value="all">Todos</option><option value="major">Maiores</option><option value="minor">Menores</option><option value="seventh">Com sétima</option><option value="ext">Maj7 e m7</option><option value="sus">Sus e add9</option></select></div>
-</div><div id="chordResults" class="chordlist"></div><p class="muted">Toque em um acorde para ouvir. Nos desenhos, a corda mais grave (6ª) fica à esquerda; “×” = não tocar e “○” = corda solta. “3fr” indica a casa onde o desenho começa.</p></section>
-<section id="afinador" class="panel"><h3>🎙️ Afinador por microfone</h3><p class="muted">Permita o acesso ao microfone e toque uma corda por vez. Use em ambiente silencioso.</p><div class="bigcenter"><div class="display" id="tuneNote">—</div><div id="tuneStatus" aria-live="polite" class="subdisplay">Aguardando microfone</div><div class="display" style="font-size:32px" id="tuneHz">— Hz</div><div id="tuneAdvice" class="muted">Referência padrão: E A D G B E</div></div><div class="actions"><button class="btn" id="startTune">Ligar afinador</button><button class="btn secondary" id="stopTune" disabled>Desligar</button></div><div class="field" style="max-width:260px;margin:0 auto 10px"><label for="tuning">Afinação</label><select id="tuning"><option value="std">Padrão (E A D G B E)</option><option value="dropd">Drop D</option><option value="half">Meio tom abaixo</option><option value="dadgad">DADGAD</option></select></div><div id="stringMeters"></div></section>
-<section id="metronomo" class="panel"><h3>⏱️ Metrônomo</h3><div class="bigcenter"><div class="display" id="bpmDisplay">90</div><div class="subdisplay">batidas por minuto (BPM)</div><div id="beats"><i class="beatdot on"></i><i class="beatdot"></i><i class="beatdot"></i><i class="beatdot"></i></div></div><div class="field"><label for="bpm">Velocidade: <b id="bpmValue">90 BPM</b></label><input id="bpm" type="range" min="40" max="220" value="90"></div><div class="grid" style="margin-top:12px"><div class="field"><label for="meter">Compasso</label><select id="meter"><option value="2">2 tempos</option><option value="3">3 tempos</option><option value="4" selected>4 tempos</option><option value="6">6 tempos</option></select></div><div class="field"><label for="sound">Som</label><select id="sound"><option value="click">Click</option><option value="wood">Madeira</option></select></div></div><div class="actions"><button class="btn" id="metroToggle">▶ Iniciar</button><button class="btn secondary" id="tapTempo">Tap tempo</button></div></section>
-<section id="ritmos" class="panel"><h3>🥁 Ritmos para acompanhar</h3><p class="muted">Padrões demonstrativos com sons sintetizados. Escolha um estilo e toque junto.</p><div class="grid"><div class="field"><label for="rhythm">Ritmo</label><select id="rhythm"><option value="pop">Pop / Balada</option><option value="rock">Rock</option><option value="reggae">Reggae</option><option value="forro">Forró</option><option value="valsa">Valsa</option><option value="country">Country</option></select></div><div class="field"><label for="rhythmBpm">Andamento: <b id="rhythmBpmValue">90 BPM</b></label><input id="rhythmBpm" type="range" min="50" max="180" value="90"></div></div><div class="actions"><button class="btn" id="rhythmToggle">▶ Tocar ritmo</button><button class="btn secondary" id="rhythmStop">Parar</button></div><div id="rhythmGrid" class="bigcenter"></div><div class="lesson" id="rhythmInfo"></div></section>
-<section id="campo" class="panel"><h3>🎼 Campo harmônico maior</h3><div class="grid"><div class="field"><label for="keySelect">Tom</label><select id="keySelect"></select></div></div><div id="harmonicResult"></div><p class="muted">Graus: I maior, ii menor, iii menor, IV maior, V maior, vi menor e vii° diminuto. A formação é calculada a partir da escala maior.</p></section>
-<section id="conta" class="panel"><h3>⭐ Assinatura</h3><div id="contaPro" style="display:none"><div class="lesson" id="contaMsgPro"></div><div class="actions"><button class="btn secondary" id="sair">Sair</button></div></div>
-<div id="contaFree"><p class="muted">Acordes, afinador, metrônomo e campo harmônico são gratuitos. Assine para liberar <b>Treino</b>, <b>Ritmos</b> e <b>Transpositor</b>. Pague por Pix, cartão ou boleto; cancele quando quiser.</p>
-<div class="lesson"><b>Quero assinar</b><div class="grid" style="margin-top:10px"><div class="field"><label for="aNome">Nome completo</label><input id="aNome" autocomplete="name"></div><div class="field"><label for="aMail">E-mail</label><input id="aMail" type="email" autocomplete="email"></div><div class="field"><label for="aCpf">CPF (só números)</label><input id="aCpf" inputmode="numeric" maxlength="14"></div></div><div class="actions"><button class="btn" id="btnAssinar">Ir para o pagamento</button></div></div>
-<div class="lesson"><b>Já paguei</b><div class="grid" style="margin-top:10px"><div class="field"><label for="eMail">E-mail</label><input id="eMail" type="email" autocomplete="email"></div><div class="field"><label for="eCpf">CPF (só números)</label><input id="eCpf" inputmode="numeric" maxlength="14"></div></div><div class="actions"><button class="btn secondary" id="btnEntrar">Liberar meu acesso</button></div></div></div>
-<p id="contaMsg" class="muted" aria-live="polite"></p></section>
-<section id="treino" class="panel"><h3>🏋️ Treino de troca de acordes</h3><p class="muted">Troque de acordes no ritmo do metrônomo. Comece devagar e aumente o andamento só quando não errar.</p><div class="grid"><div class="field"><label for="trSet">Sequência</label><select id="trSet"></select></div><div class="field"><label for="trBars">Tempo em cada acorde</label><select id="trBars"><option value="1">1 compasso (4 batidas)</option><option value="2">2 compassos (8 batidas)</option></select></div><div class="field"><label for="trBpm">Andamento: <b id="trBpmV">60 BPM</b></label><input id="trBpm" type="range" min="40" max="140" value="60"></div></div><div class="bigcenter"><div class="display" id="trChord">—</div><div class="chord" style="max-width:130px;margin:auto;cursor:default" id="trSvg"></div><div class="subdisplay" id="trNext">Toque em Começar</div><div id="trBeats" style="margin-top:6px"></div></div><div class="actions"><button class="btn" id="trGo">▶ Começar</button></div><div class="lesson" id="trLog"></div></section>
-<section id="transpor" class="panel"><h3>🔁 Transpositor de cifras</h3><p class="muted">Cole a cifra, escolha quantos semitons subir ou descer e, se quiser, o capotraste. Só são trocados os acordes escritos separados por espaço.</p><div class="field"><label for="trIn">Cifra</label><textarea id="trIn" rows="5" placeholder="G D Em C&#10;G D C">G D Em C
-G D C</textarea></div><div class="grid" style="margin-top:12px"><div class="field"><label for="trSemi">Mudar tom</label><select id="trSemi"></select></div><div class="field"><label for="trCapo">Capotraste</label><select id="trCapo"></select></div></div><div class="lesson diagram" id="trOut" style="white-space:pre-wrap"></div><div class="actions"><button class="btn secondary" id="trCopy">Copiar resultado</button></div></section>
-<section id="estudos" class="panel"><h3>🎓 Guia de estudos</h3><div class="lesson"><b>1. Afinação primeiro</b><br>Afine as cordas na sequência E (Mi), A (Lá), D (Ré), G (Sol), B (Si), E (Mi).</div><div class="lesson"><b>2. Troca de acordes</b><br>Escolha dois acordes fáceis, como Em e G. Faça quatro batidas em cada um e troque sem parar o pulso.</div><div class="lesson"><b>3. Ritmo e metrônomo</b><br>Comece em 60 BPM. Quando tocar sem erros, aumente cinco BPM por vez.</div><div class="lesson"><b>4. Campo harmônico</b><br>Pratique as sequências I–V–vi–IV e I–IV–V em diferentes tons.</div><div class="lesson"><b>5. Rotina de 20 minutos</b><br>5 min afinação e aquecimento • 5 min acordes • 5 min ritmo • 5 min música.</div></section>
-<div class="footer">Violão Descomplicado Melky • Feito para estudar em qualquer lugar.</div>
+<header class="top">
+  <img src="icons/icon-192.png" alt="">
+  <h1>VIOLÃO DESCOMPLICADO</h1>
+  <p>Aprenda, pratique e evolua.</p>
+</header>
+<main class="cards">
+  <a class="card" href="jornada/">
+    <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 12h18a4 4 0 0 1 4 4v38a4 4 0 0 0-4-4H10z"/><path d="M54 12H36a4 4 0 0 0-4 4v38a4 4 0 0 1 4-4h18z"/></svg>
+    <div><h2>APRENDA VIOLÃO</h2><span>Módulos e aulas do zero ao avançado.</span></div>
+  </a>
+  <a class="card" href="afinador/">
+    <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 40a24 24 0 0 1 48 0"/><path d="M32 40l10-16"/><circle cx="32" cy="40" r="3" fill="currentColor"/><path d="M32 8v4M12 18l3 3M52 18l-3 3"/></svg>
+    <div><h2>AFINADOR DIGITAL</h2><span>Afine as 6 cordas usando o microfone.</span></div>
+  </a>
+  <a class="card" href="metronomo/">
+    <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M24 8h16l10 48H14z"/><path d="M32 46L40 18"/><circle cx="40" cy="18" r="3" fill="currentColor"/><path d="M20 56h24"/></svg>
+    <div><h2>METRÔNOMO DIGITAL</h2><span>Treine o ritmo de 40 a 240 BPM.</span></div>
+  </a>
+  <button id="instalar" hidden>Instalar o app no celular</button>
 </main>
-<script>
-const $=s=>document.querySelector(s);
-document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.tab,.panel').forEach(x=>x.classList.remove('active'));b.classList.add('active');$('#'+b.dataset.tab).classList.add('active')}));
-const chordData=[
-['C','major','x32010','Dó maior'],['D','major','xx0232','Ré maior'],['E','major','022100','Mi maior'],['F','major','133211','Fá maior (pestana)'],['G','major','320003','Sol maior'],['A','major','x02220','Lá maior'],['B','major','x24442','Si maior (pestana)'],['Bb','major','x13331','Si bemol maior (pestana)'],
-['Am','minor','x02210','Lá menor'],['Bm','minor','x24432','Si menor (pestana)'],['Cm','minor','x35543','Dó menor (pestana)'],['Dm','minor','xx0231','Ré menor'],['Em','minor','022000','Mi menor'],['Fm','minor','133111','Fá menor (pestana)'],['Gm','minor','355333','Sol menor (pestana)'],['F#m','minor','244222','Fá sustenido menor (pestana)'],['C#m','minor','x46654','Dó sustenido menor (pestana)'],
-['A7','seventh','x02020','Lá com sétima'],['B7','seventh','x21202','Si com sétima'],['C7','seventh','x32310','Dó com sétima'],['D7','seventh','xx0212','Ré com sétima'],['E7','seventh','020100','Mi com sétima'],['G7','seventh','320001','Sol com sétima'],
-['Cmaj7','ext','x32000','Dó com sétima maior'],['Dmaj7','ext','xx0222','Ré com sétima maior'],['Fmaj7','ext','xx3210','Fá com sétima maior'],['Gmaj7','ext','320002','Sol com sétima maior'],['Am7','ext','x02010','Lá menor com sétima'],['Bm7','ext','x20202','Si menor com sétima'],['Dm7','ext','xx0211','Ré menor com sétima'],['Em7','ext','022030','Mi menor com sétima'],
-['Asus2','sus','x02200','Lá sus2'],['Asus4','sus','x02230','Lá sus4'],['Dsus2','sus','xx0230','Ré sus2'],['Dsus4','sus','xx0233','Ré sus4'],['Esus4','sus','022200','Mi sus4'],['Cadd9','sus','x32030','Dó add9']
-];
-function chordSVG(f){let n=[...f].map(c=>c==='x'?-1:+c),pos=n.filter(x=>x>0),mx=Math.max(0,...pos),mn=pos.length?Math.min(...pos):1,base=mx<=4?1:mn,s='<svg viewBox="0 0 84 100" aria-hidden="true"><g stroke="#6b7a99" stroke-width="1.4">';
-for(let i=0;i<6;i++)s+=`<line x1="${16+i*10}" y1="22" x2="${16+i*10}" y2="87"/>`;for(let j=0;j<=5;j++)s+=`<line x1="16" y1="${22+j*13}" x2="66" y2="${22+j*13}"${j===0&&base===1?' stroke="#dce5f8" stroke-width="4"':''}/>`;s+='</g>';
-n.forEach((v,i)=>{let x=16+i*10;if(v<0)s+=`<text x="${x}" y="14" fill="#ff7777" font-size="11" text-anchor="middle">×</text>`;else if(v===0)s+=`<circle cx="${x}" cy="10" r="3.4" fill="none" stroke="#dce5f8" stroke-width="1.3"/>`;else s+=`<circle cx="${x}" cy="${22+(v-base+.5)*13}" r="4.6" fill="#f5bd4f"/>`});
-if(base>1)s+=`<text x="82" y="${22+6.5+4}" fill="#aab4c8" font-size="9" text-anchor="end">${base}fr</text>`;return s+'</svg>'}
-function playChord(f){let c=ctx(),t=c.currentTime+.02,open=[40,45,50,55,59,64];[...f].forEach((ch,i)=>{if(ch==='x')return;let fr=440*2**((open[i]+ +ch-69)/12),o=c.createOscillator(),g=c.createGain(),st=t+i*.045;o.type='triangle';o.frequency.value=fr;g.gain.setValueAtTime(0,st);g.gain.linearRampToValueAtTime(.16,st+.01);g.gain.exponentialRampToValueAtTime(.001,st+1.6);o.connect(g);g.connect(c.destination);o.start(st);o.stop(st+1.7)})}
-function renderChords(){let q=$('#chordSearch').value.toLowerCase().trim(),t=$('#chordType').value;let arr=chordData.filter(c=>(t==='all'||c[1]===t)&&(c[0].toLowerCase().includes(q)||c[3].toLowerCase().includes(q)));$('#chordResults').innerHTML=arr.map(c=>`<button class="chord" data-f="${c[2]}" aria-label="Ouvir ${c[3]}"><strong>${c[0]}</strong>${chordSVG(c[2])}<small class="muted">${c[3]}</small></button>`).join('')||'<p class="muted">Nenhum acorde encontrado. Tente “Am” ou “Sol”.</p>'}
-$('#chordResults').addEventListener('click',e=>{let b=e.target.closest('.chord');if(b)playChord(b.dataset.f)});
-$('#chordSearch').addEventListener('input',renderChords);$('#chordType').addEventListener('change',renderChords);renderChords();
-// Campo harmônico (grafia correta em tons com bemol)
-const sharp=['C','C#','D','D#','E','F','F#','G','G#','A','A#','B'],flat=['C','Db','D','Eb','E','F','Gb','G','Ab','A','Bb','B'],keys=['C','Db','D','Eb','E','F','F#','G','Ab','A','Bb','B'];
-keys.forEach(k=>$('#keySelect').add(new Option(k,k)));
-function harmonize(){let k=$('#keySelect').value,names=['F','Bb','Eb','Ab','Db'].includes(k)?flat:sharp,idx=names.indexOf(k),scale=[0,2,4,5,7,9,11].map(n=>names[(idx+n)%12]),types=['','m','m','','','m','°'],roman=['I','ii','iii','IV','V','vi','vii°'],ch=scale.map((n,i)=>n+types[i]),pr=[[0,4,5,3],[0,3,4],[1,4,0],[5,3,0,4],[0,5,3,4]];
-$('#harmonicResult').innerHTML=`<p class="muted">Escala: <b>${scale.join(' • ')}</b></p><div class="scalegrid">${ch.map((c,i)=>`<div class="degree"><small>${roman[i]}</small><b>${c}</b><small>${['Maior','menor','menor','Maior','Maior','menor','dim.'][i]}</small></div>`).join('')}</div><div class="prog">${pr.map(p=>`<p class="muted"><b>${p.map(i=>roman[i]).join('–')}</b>: ${p.map(i=>ch[i]).join(' – ')}</p>`).join('')}</div>`}
-$('#keySelect').addEventListener('change',harmonize);harmonize();
-// Áudio
-let audioCtx=null;function ctx(){if(!audioCtx)audioCtx=new (window.AudioContext||window.webkitAudioContext)();if(audioCtx.state==='suspended')audioCtx.resume();return audioCtx}
-function tone(freq,dur,type,vol,t){let c=ctx();t=t||c.currentTime;let o=c.createOscillator(),g=c.createGain();o.type=type||'sine';o.frequency.value=freq;g.gain.setValueAtTime(vol||.12,t);g.gain.exponentialRampToValueAtTime(.001,t+dur);o.connect(g);g.connect(c.destination);o.start(t);o.stop(t+dur)}
-function noise(t,len,vol,hp){let c=ctx(),n=Math.floor(c.sampleRate*len),b=c.createBuffer(1,n,c.sampleRate),d=b.getChannelData(0);for(let i=0;i<n;i++)d[i]=Math.random()*2-1;let s=c.createBufferSource(),g=c.createGain(),f=c.createBiquadFilter();s.buffer=b;f.type='highpass';f.frequency.value=hp;g.gain.value=vol;s.connect(f);f.connect(g);g.connect(c.destination);s.start(t)}
-function drumHit(k,t){let c=ctx();if(k==='K'){let o=c.createOscillator(),g=c.createGain();o.frequency.setValueAtTime(130,t);o.frequency.exponentialRampToValueAtTime(42,t+.13);g.gain.setValueAtTime(.7,t);g.gain.exponentialRampToValueAtTime(.001,t+.16);o.connect(g);g.connect(c.destination);o.start(t);o.stop(t+.17)}else if(k==='S'){tone(180,.09,'triangle',.12,t);noise(t,.08,.13,1500)}else noise(t,.025,.08,7000)}
-// Agendador com antecedência: batidas precisas mesmo com a tela ocupada
-function Sched(dur,cb){let id=null,next=0,i=0;return{get on(){return id!==null},start(){this.stop();let c=ctx();next=c.currentTime+.06;i=0;id=setInterval(()=>{while(next<c.currentTime+.12){cb(i++,next);next+=dur()}},25)},stop(){clearInterval(id);id=null}}}
-const later=(t,fn)=>setTimeout(fn,Math.max(0,(t-ctx().currentTime)*1000));
-// Metrônomo
-let tapTimes=[];
-const metro=Sched(()=>60/+$('#bpm').value,(i,t)=>{let n=+$('#meter').value,b=i%n,w=$('#sound').value==='wood';w?tone(b?900:1500,.04,'triangle',b?.25:.4,t):tone(b?850:1300,.055,'square',b?.09:.16,t);later(t,()=>{if(metro.on)$('#beats').innerHTML=Array.from({length:n},(_,j)=>`<i class="beatdot ${j===b?'on':''}"></i>`).join('')})});
-function setMetroBtn(){$('#metroToggle').textContent=metro.on?'Ⅱ Pausar':'▶ Iniciar'}
-$('#bpm').addEventListener('input',()=>{$('#bpmDisplay').textContent=$('#bpm').value;$('#bpmValue').textContent=$('#bpm').value+' BPM'});
-$('#meter').addEventListener('change',()=>{if(metro.on)metro.start();else $('#beats').innerHTML=Array.from({length:+$('#meter').value},()=>'<i class="beatdot"></i>').join('')});
-$('#metroToggle').onclick=()=>{metro.on?metro.stop():metro.start();setMetroBtn()};
-$('#tapTempo').onclick=()=>{let now=Date.now();tapTimes=tapTimes.filter(t=>now-t<2500);tapTimes.push(now);tapTimes=tapTimes.slice(-6);if(tapTimes.length>1){let avg=(tapTimes.at(-1)-tapTimes[0])/(tapTimes.length-1),v=Math.max(40,Math.min(220,Math.round(60000/avg)));$('#bpm').value=v;$('#bpm').dispatchEvent(new Event('input'))}};
-// Ritmos (K=bumbo, S=caixa, H=chimbal; cada posição = uma colcheia)
-const rhythms={
-pop:{n:'Pop / Balada',s:['KH','H','SH','H','H','KH','SH','H'],g:'↓ · ↓ ↑ · ↑ ↓ ↑',d:'A batida mais usada em baladas. Boa para treinar a troca de acordes.'},
-rock:{n:'Rock',s:['KH','H','SH','H','KH','KH','SH','H'],g:'↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓',d:'Palhetada reta em colcheias. Mantenha a mão firme e constante.'},
-reggae:{n:'Reggae',s:['','H','','H','KS','H','','H'],g:'· ↓ · ↓ · ↓ · ↓',d:'O violão toca só no contratempo (o “e” de cada tempo). O tempo 3 é o mais forte.'},
-forro:{n:'Forró (xote)',s:['KH','H','S','K','KH','H','S','H'],g:'↓ · ↓ ↑ ↓ · ↓ ↑',d:'Marcação inspirada na zabumba: bumbo grave e batida seca no meio.'},
-valsa:{n:'Valsa (3 tempos)',s:['KH','H','SH','H','SH','H'],g:'↓ · ↓ ↑ ↓ ↑',d:'Compasso ternário: conte 1-2-3 com o 1 mais forte.'},
-country:{n:'Country',s:['KH','SH','H','SH','KH','SH','H','SH'],g:'baixo ↓↑ ↓↑ baixo ↓↑ ↓↑',d:'“Boom-chick”: toque o baixo do acorde e depois a batida.'}};
-const rh=Sched(()=>30/+$('#rhythmBpm').value,(i,t)=>{let r=rhythms[$('#rhythm').value],k=i%r.s.length;[...r.s[k]].forEach(c=>drumHit(c,t));later(t,()=>{if(rh.on)drawGrid(k)})});
-function drawGrid(k){let r=rhythms[$('#rhythm').value];$('#rhythmGrid').innerHTML=r.s.map((_,j)=>`<i class="beatdot ${j===k?'on':''}"></i>`).join('')}
-function showRhythm(){let r=rhythms[$('#rhythm').value];drawGrid(-1);$('#rhythmInfo').innerHTML=`<b>${r.n}</b><br>${r.d}<br><span class="diagram">Batida do violão: ${r.g}</span><br><small class="muted">↓ palhetada para baixo • ↑ para cima • · pausa</small>`}
-function setRhBtn(){$('#rhythmToggle').textContent=rh.on?'Ⅱ Tocando':'▶ Tocar ritmo'}
-$('#rhythmToggle').onclick=()=>{rh.on?rh.stop():rh.start();setRhBtn()};$('#rhythmStop').onclick=()=>{rh.stop();setRhBtn();drawGrid(-1)};
-$('#rhythm').onchange=()=>{showRhythm();if(rh.on)rh.start()};$('#rhythmBpm').oninput=()=>{$('#rhythmBpmValue').textContent=$('#rhythmBpm').value+' BPM'};showRhythm();
-// Afinador
-let stream=null,analyser=null,tuneRAF=null,hist=[],miss=0,frame=0;
-let strings=[['E2',82.41,'Mi'],['A2',110,'Lá'],['D3',146.83,'Ré'],['G3',196,'Sol'],['B3',246.94,'Si'],['E4',329.63,'Mi']];
-function renderStrings(){$('#stringMeters').innerHTML=strings.map((s,i)=>`<div class="stringrow"><span>${6-i}ª ${s[2]}</span><div class="meter"><i id="m${i}"></i></div><b class="note">${s[0]}</b><button class="btn secondary" data-s="${i}" aria-label="Ouvir ${s[0]}">▶</button></div>`).join('')};renderStrings();
-$('#stringMeters').addEventListener('click',e=>{let b=e.target.closest('button');if(b)tone(strings[+b.dataset.s][1],1.4,'triangle',.25)});
-function detect(buf,sr){let N=2048,r=0;for(let i=0;i<N;i++)r+=buf[i]*buf[i];if(Math.sqrt(r/N)<.01)return -1;let lo=Math.floor(sr/400),hi=Math.floor(sr/70),c=new Float32Array(hi+2),best=0;for(let l=lo;l<=hi+1;l++){let s=0;for(let i=0;i<N-hi-1;i++)s+=buf[i]*buf[i+l];c[l]=s;if(s>best)best=s}if(best<=0)return -1;let p=-1;for(let l=lo+1;l<=hi;l++)if(c[l]>c[l-1]&&c[l]>=c[l+1]&&c[l]>.85*best){p=l;break}if(p<0)return -1;let a=c[p-1],b=c[p],d=c[p+1],sh=(a-d)/(2*(a-2*b+d)||1);return sr/(p+sh)}
-const centsOff=(f,ref)=>1200*Math.log2(f/ref);
-function resetMeters(){strings.forEach((_,i)=>{let m=$('#m'+i);m.style.left='44%';m.className=''})}
-async function startTuner(){try{stream=await navigator.mediaDevices.getUserMedia({audio:{echoCancellation:false,noiseSuppression:false,autoGainControl:false}});let c=ctx(),src=c.createMediaStreamSource(stream);analyser=c.createAnalyser();analyser.fftSize=4096;src.connect(analyser);let buf=new Float32Array(4096);$('#tuneStatus').textContent='Microfone ligado — toque uma corda';
-function loop(){tuneRAF=requestAnimationFrame(loop);if(++frame%3)return;analyser.getFloatTimeDomainData(buf);let f=detect(buf,c.sampleRate);if(f>60&&f<400){miss=0;hist.push(f);if(hist.length>5)hist.shift();let m=[...hist].sort((a,b)=>a-b)[hist.length>>1],midi=Math.round(69+12*Math.log2(m/440)),nm=sharp[(midi%12+12)%12]+(Math.floor(midi/12)-1),ni=strings.reduce((a,b,i)=>Math.abs(b[1]-m)<Math.abs(strings[a][1]-m)?i:a,0),off=centsOff(m,strings[ni][1]);$('#tuneNote').textContent=nm;$('#tuneHz').textContent=m.toFixed(1)+' Hz';let ok=Math.abs(off)<5;$('#tuneStatus').textContent=ok?'Afinada! ✓':off<0?'Grave — aperte a tarraxa um pouco':'Aguda — afrouxe a tarraxa um pouco';$('#tuneAdvice').textContent=`Corda mais próxima: ${strings[ni][0]} • ${off>0?'+':''}${off.toFixed(0)} cents`;resetMeters();let el=$('#m'+ni);el.style.left=`calc(${Math.max(0,Math.min(100,50+off))}% - 6px)`;el.className=ok?'ok':''}else if(++miss>12){hist=[];$('#tuneNote').textContent='—';$('#tuneHz').textContent='— Hz';$('#tuneStatus').textContent='Toque uma corda';resetMeters()}}
-loop();$('#startTune').disabled=true;$('#stopTune').disabled=false}catch(e){$('#tuneStatus').textContent='Sem acesso ao microfone. Permita o microfone no navegador e abra o site em HTTPS.'}}
-function stopTuner(){cancelAnimationFrame(tuneRAF);if(stream)stream.getTracks().forEach(t=>t.stop());stream=null;hist=[];$('#startTune').disabled=false;$('#stopTune').disabled=true;$('#tuneStatus').textContent='Afinador desligado';resetMeters()}
-$('#startTune').onclick=startTuner;$('#stopTune').onclick=stopTuner;
-document.addEventListener('visibilitychange',()=>{if(document.hidden&&stream)stopTuner()});
-document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>{if(b.dataset.tab!=='afinador'&&stream)stopTuner();if(b.dataset.tab!=='metronomo'&&metro.on){metro.stop();setMetroBtn()}if(b.dataset.tab!=='ritmos'&&rh.on){rh.stop();setRhBtn();drawGrid(-1)}}));
-// Transpositor
-for(let i=-11;i<=11;i++)$('#trSemi').add(new Option(i===0?'Igual (0)':(i>0?'+':'')+i+' semitons',i));$('#trSemi').value=0;
-for(let i=0;i<=9;i++)$('#trCapo').add(new Option(i?`Casa ${i}`:'Sem capotraste',i));
-function tChord(tok,n){let m=tok.match(/^([A-G][#b]?)(.*?)(?:\/([A-G][#b]?))?$/);if(!m||!/^(m|maj|min|dim|aug|sus|add|M|°|[0-9()+\-])*$/.test(m[2]))return null;const mv=r=>{let i=sharp.indexOf(r.replace('Db','C#').replace('Eb','D#').replace('Gb','F#').replace('Ab','G#').replace('Bb','A#'));if(i<0)return r;return (r.includes('b')?flat:sharp)[((i+n)%12+12)%12]};return mv(m[1])+m[2]+(m[3]?'/'+mv(m[3]):'')}
-function transpose(){let n=+$('#trSemi').value-+$('#trCapo').value,cp=+$('#trCapo').value;$('#trOut').textContent=($('#trIn').value.replace(/(^|\s)(\S+)(?=\s|$)/g,(w,sp,t)=>{let r=tChord(t,n);return r?sp+r:w}))||'Cole uma cifra acima.';$('#trOut').dataset.note=cp?`Capotraste na casa ${cp}: toque estas formas.`:''}
-['#trIn','#trSemi','#trCapo'].forEach(s=>$(s).addEventListener('input',transpose));
-$('#trCopy').onclick=async()=>{try{await navigator.clipboard.writeText($('#trOut').textContent);$('#trCopy').textContent='Copiado ✓'}catch(e){$('#trCopy').textContent='Selecione e copie manualmente'}setTimeout(()=>$('#trCopy').textContent='Copiar resultado',1800)};transpose();
-// Afinações
-const tunings={std:[['E2',82.41,'Mi'],['A2',110,'Lá'],['D3',146.83,'Ré'],['G3',196,'Sol'],['B3',246.94,'Si'],['E4',329.63,'Mi']],dropd:[['D2',73.42,'Ré'],['A2',110,'Lá'],['D3',146.83,'Ré'],['G3',196,'Sol'],['B3',246.94,'Si'],['E4',329.63,'Mi']],half:[['Eb2',77.78,'Mib'],['Ab2',103.83,'Láb'],['Db3',138.59,'Réb'],['Gb3',185,'Solb'],['Bb3',233.08,'Sib'],['Eb4',311.13,'Mib']],dadgad:[['D2',73.42,'Ré'],['A2',110,'Lá'],['D3',146.83,'Ré'],['G3',196,'Sol'],['A3',220,'Lá'],['D4',293.66,'Ré']]};
-$('#tuning').onchange=()=>{strings=tunings[$('#tuning').value];hist=[];renderStrings()};
-// Treino de troca de acordes + diário de prática
-const sets={'Em ↔ G (começando)':['Em','G'],'C – G – Am – Em':['C','G','Am','Em'],'G – D – Em – C':['G','D','Em','C'],'Am – Dm – E – Am':['Am','Dm','E','Am'],'D – A – Bm – G':['D','A','Bm','G'],'C – F – G (pestana)':['C','F','G','C']};
-Object.keys(sets).forEach(k=>$('#trSet').add(new Option(k,k)));
-const fretsOf=n=>(chordData.find(c=>c[0]===n)||[0,0,'xxxxxx'])[2];
-let t0=0;
-const train=Sched(()=>60/+$('#trBpm').value,(i,t)=>{let L=sets[$('#trSet').value],per=4*+$('#trBars').value,k=i%per,ci=Math.floor(i/per)%L.length;tone(i%4?850:1300,.05,'square',i%4?.08:.14,t);later(t,()=>{if(!train.on)return;if(!k||i===0){$('#trChord').textContent=L[ci];$('#trSvg').innerHTML=chordSVG(fretsOf(L[ci]));$('#trNext').textContent='Próximo: '+L[(ci+1)%L.length]}$('#trBeats').innerHTML=Array.from({length:4},(_,j)=>`<i class="beatdot ${j===i%4?'on':''}"></i>`).join('')})});
-const dayKey=d=>d.toLocaleDateString('sv');
-function getLog(){try{return JSON.parse(localStorage.getItem('vm_log')||'{}')}catch(e){return{}}}
-function saveSecs(s){if(s<5)return;try{let l=getLog(),k=dayKey(new Date());l[k]=(l[k]||0)+s;localStorage.setItem('vm_log',JSON.stringify(l))}catch(e){}}
-function showLog(){let l=getLog(),d=new Date(),k=dayKey(d),today=Math.round((l[k]||0)/60),streak=0;if(!(l[k]>=60))d.setDate(d.getDate()-1);while((l[dayKey(d)]||0)>=60){streak++;d.setDate(d.getDate()-1)}$('#trLog').innerHTML=`<b>Seu diário:</b> hoje você treinou <b>${today} min</b>. Sequência: <b>${streak} dia${streak===1?'':'s'}</b> seguido${streak===1?'':'s'}.<br><small class="muted">Treinar 1 minuto já conta para o dia. Os dados ficam só neste aparelho.</small>`}
-function stopTrain(){if(train.on){train.stop();saveSecs((Date.now()-t0)/1000)}$('#trGo').textContent='▶ Começar';showLog()}
-$('#trGo').onclick=()=>{if(train.on)return stopTrain();t0=Date.now();$('#trChord').textContent='…';train.start();$('#trGo').textContent='Ⅱ Parar'};
-$('#trBpm').oninput=()=>$('#trBpmV').textContent=$('#trBpm').value+' BPM';
-['#trSet','#trBars'].forEach(s=>$(s).addEventListener('change',()=>{if(train.on)train.start()}));
-document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>{if(b.dataset.tab!=='treino')stopTrain()}));
-document.addEventListener('visibilitychange',()=>{if(document.hidden)stopTrain()});
-showLog();
-// Assinatura (pagamentos pelo Asaas, via funções da Netlify)
-const LOCK=['treino','ritmos','transpor'];
-function getTok(){try{let t=localStorage.getItem('vm_tok');if(!t)return null;let p=JSON.parse(atob(t.split('.')[0].replace(/-/g,'+').replace(/_/g,'/')));return p.x>Date.now()?p:null}catch(e){return null}}
-const isPro=()=>!!getTok();
-function setLocks(){let p=getTok();LOCK.forEach(k=>{let b=document.querySelector(`[data-tab=${k}]`);b.textContent=b.textContent.replace('🔒 ','');if(!p)b.textContent='🔒 '+b.textContent});$('#contaPro').style.display=p?'block':'none';$('#contaFree').style.display=p?'none':'block';$('#tabConta').textContent=p?'⭐ Minha conta':'Assinar';if(p)$('#contaMsgPro').innerHTML=`Assinatura ativa ✓<br><small class="muted">Acesso neste aparelho até ${new Date(p.x).toLocaleDateString('pt-BR')}. Entre de novo depois dessa data com seu e-mail e CPF.</small>`}
-document.querySelector('nav').addEventListener('click',e=>{let b=e.target.closest('.tab');if(b&&LOCK.includes(b.dataset.tab)&&!isPro()){e.stopPropagation();$('#tabConta').click();$('#contaMsg').textContent='Essa ferramenta é para assinantes.'}},true);
-async function call(fn,body,btn){let m=$('#contaMsg');btn.disabled=true;m.textContent='Aguarde…';try{let r=await fetch('/api/'+fn,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)}),d=await r.json();if(!r.ok){m.textContent=d.erro||'Algo deu errado.';return null}return d}catch(e){m.textContent='Sem conexão com o servidor de pagamento. Verifique a internet.';return null}finally{btn.disabled=false}}
-$('#btnAssinar').onclick=async function(){let d=await call('assinar',{nome:$('#aNome').value,email:$('#aMail').value,cpf:$('#aCpf').value},this);if(!d)return;if(d.emDia){$('#contaMsg').textContent='Sua assinatura já está em dia. Use “Já paguei” para liberar o acesso.';return}$('#eMail').value=$('#aMail').value;$('#eCpf').value=$('#aCpf').value;$('#contaMsg').innerHTML=`Abrimos a página de pagamento. Depois de pagar, volte aqui e toque em “Liberar meu acesso”. <a href="${d.url}" target="_blank" rel="noopener" style="color:var(--gold)">Abrir de novo</a>`;window.open(d.url,'_blank','noopener')};
-$('#btnEntrar').onclick=async function(){let d=await call('entrar',{email:$('#eMail').value,cpf:$('#eCpf').value},this);if(!d)return;try{localStorage.setItem('vm_tok',d.token)}catch(e){$('#contaMsg').textContent='Este navegador bloqueou o armazenamento. Saia do modo privado e tente de novo.';return}$('#contaMsg').textContent='Acesso liberado! 🎸';setLocks()};
-$('#sair').onclick=()=>{try{localStorage.removeItem('vm_tok')}catch(e){}setLocks();$('#contaMsg').textContent='Você saiu.'};
-setLocks();
-if('serviceWorker' in navigator && location.protocol.startsWith('http'))window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}));
-</script>
-<div id="instBar" role="dialog" aria-label="Instalar aplicativo"><div><b>Instale o app</b><br><span id="instTxt">Use o Violão Melky direto da tela inicial, mesmo sem internet.</span></div><button id="instYes">Instalar</button><button id="instNo" aria-label="Fechar">✕</button></div>
-<script>
-(function(){
-var bar=document.getElementById('instBar'),yes=document.getElementById('instYes'),no=document.getElementById('instNo'),dp=null;
-var standalone=matchMedia('(display-mode: standalone)').matches||navigator.standalone;
-if(standalone)return;
-var dismissed=0;try{dismissed=+localStorage.getItem('instNo')||0}catch(e){}
-function show(){if(Date.now()-dismissed>3*864e5)bar.classList.add('show')}
-addEventListener('beforeinstallprompt',function(e){e.preventDefault();dp=e;show()});
-addEventListener('appinstalled',function(){bar.classList.remove('show');dp=null});
-yes.onclick=async function(){
- if(dp){dp.prompt();try{await dp.userChoice}catch(e){}dp=null;bar.classList.remove('show')}
- else{document.getElementById('instTxt').innerHTML='No Chrome, toque nos <b>⋮ três pontinhos</b> e depois em <b>Instalar app</b> (ou <b>Adicionar à tela inicial</b>).';yes.style.display='none'}
-};
-no.onclick=function(){bar.classList.remove('show');try{localStorage.setItem('instNo',Date.now())}catch(e){}};
-/* se o Chrome não disparar o aviso, mostra a dica manual depois de alguns segundos (só Android) */
-if(/Android/i.test(navigator.userAgent))setTimeout(function(){if(!dp)show()},4000);
-})();
-</script>
-</body></html>
+<footer>100% gratuito · sem anúncios · sem cadastro · funciona offline</footer>
+<script src="js/pwa.js"></script>
+</body>
+</html>
