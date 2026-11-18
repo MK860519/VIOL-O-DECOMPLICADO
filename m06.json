@@ -1,0 +1,283 @@
+{
+  "id": "m06",
+  "aulas": [
+    {
+      "id": "m06-a01",
+      "titulo": "Como ler cifras",
+      "duracaoMin": 10,
+      "objetivo": "Você vai aprender a ler uma cifra e a descobrir quais acordes tocar e quando trocar.",
+      "introducao": "A cifra é o jeito mais prático de aprender músicas no violão.",
+      "explicacao": "Na cifra, as letras indicam os acordes: C, D, E... Uma letra 'm' depois indica acorde menor, como Em e Am. Os nomes aparecem acima da letra, no ponto em que o acorde muda.",
+      "conteudo": [
+        {
+          "tipo": "passos",
+          "itens": [
+            "Letra sozinha: acorde maior (G, C, D).",
+            "Letra + m: acorde menor (Em, Am).",
+            "Troque de acorde quando o nome mudar na cifra."
+          ]
+        },
+        {
+          "tipo": "exemplo",
+          "texto": "Numa cifra com 'Em  C  G  D' acima da letra, você toca Em, depois C, depois G e depois D, trocando onde cada nome aparece."
+        }
+      ],
+      "pratica": {
+        "orientacao": "Pegue uma cifra simples e identifique os acordes que você já conhece. Marque os que ainda faltam aprender.",
+        "minutos": 5,
+        "exercicios": [
+          "Leia em voz alta: Am, G, C, F, e diga quais são maiores e quais são menores.",
+          "Escreva no papel uma sequência de 4 acordes que você já sabe tocar.",
+          "Toque essa sequência, um compasso por acorde."
+        ]
+      },
+      "errosComuns": [
+        {
+          "problema": "Confundir 'Em' com 'E'.",
+          "solucao": "Sem o 'm' o acorde é maior (E); com o 'm' é menor (Em). A letra 'm' muda o som."
+        },
+        {
+          "problema": "Não saber quando trocar.",
+          "solucao": "Troque quando o nome do próximo acorde aparecer acima da letra, no tempo 1 do compasso."
+        }
+      ],
+      "desafio": "Escreva uma cifra de 8 acordes com os acordes que você já aprendeu e toque-a na ordem, um compasso por acorde.",
+      "criterioAvancar": "Avance quando souber ler Em, E, Am e D e dizer quais são maiores e quais são menores."
+    },
+    {
+      "id": "m06-a02",
+      "titulo": "Progressão G – C – D",
+      "duracaoMin": 12,
+      "objetivo": "Você vai tocar a progressão G – C – D, uma das mais usadas no violão.",
+      "introducao": "Uma progressão é uma sequência de acordes que se repete em várias músicas.",
+      "explicacao": "G, C e D são muito comuns juntos. Toque um compasso de cada, na batida para baixo, trocando no tempo 1.",
+      "conteudo": [
+        {
+          "tipo": "acorde",
+          "nome": "G",
+          "cordas": [
+            3,
+            2,
+            0,
+            0,
+            0,
+            3
+          ],
+          "dedos": [
+            2,
+            1,
+            0,
+            0,
+            0,
+            3
+          ]
+        },
+        {
+          "tipo": "acorde",
+          "nome": "C",
+          "cordas": [
+            -1,
+            3,
+            2,
+            0,
+            1,
+            0
+          ],
+          "dedos": [
+            0,
+            3,
+            2,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "tipo": "acorde",
+          "nome": "D",
+          "cordas": [
+            -1,
+            -1,
+            0,
+            2,
+            3,
+            2
+          ],
+          "dedos": [
+            0,
+            0,
+            0,
+            1,
+            3,
+            2
+          ]
+        },
+        {
+          "tipo": "passos",
+          "itens": [
+            "Toque 1 compasso de G, 1 de C e 1 de D.",
+            "Volte ao G e repita o ciclo."
+          ]
+        },
+        {
+          "tipo": "exemplo",
+          "texto": "G (4 batidas), C (4 batidas), D (4 batidas) e G de novo. Cada compasso tem 4 batidas para baixo, uma por clique."
+        }
+      ],
+      "pratica": {
+        "orientacao": "Repita a sequência por 5 minutos, devagar. Quando estiver limpa, aumente de 5 em 5 BPM.",
+        "minutos": 8,
+        "ferramenta": {
+          "tipo": "metronomo",
+          "bpm": 60,
+          "compasso": 4
+        },
+        "exercicios": [
+          "Toque o ciclo G, C, D por 3 minutos a 60 BPM.",
+          "Repita o ciclo com a batida baixo-cima, por 3 minutos.",
+          "Aumente 5 BPM só depois de 4 ciclos seguidos sem erro."
+        ]
+      },
+      "errosComuns": [
+        {
+          "problema": "Atrasar na troca de C para D.",
+          "solucao": "Estude essa troca sozinha, devagar, e depois junte ao ciclo."
+        },
+        {
+          "problema": "O G soa abafado depois da troca.",
+          "solucao": "Monte o G com calma uma vez e confira cada corda; depois acelere."
+        }
+      ],
+      "desafio": "Toque o ciclo G – C – D – G 6 vezes seguidas a 60 BPM sem parar.",
+      "criterioAvancar": "Avance quando fizer 6 ciclos seguidos sem parar, mantendo o ritmo."
+    },
+    {
+      "id": "m06-a03",
+      "titulo": "Sua primeira sequência: Em – C – G – D",
+      "duracaoMin": 15,
+      "objetivo": "Você vai tocar um ciclo de quatro acordes com batida e ritmo firmes.",
+      "introducao": "Chegou o momento de juntar quatro acordes num ciclo completo, que é a base de muitas canções.",
+      "explicacao": "A sequência Em, C, G, D se repete em muitas músicas populares. Toque um compasso de cada acorde, com a batida baixo-cima, e repita o ciclo várias vezes, sem parar o ritmo.",
+      "conteudo": [
+        {
+          "tipo": "acorde",
+          "nome": "Em",
+          "cordas": [
+            0,
+            2,
+            2,
+            0,
+            0,
+            0
+          ],
+          "dedos": [
+            0,
+            2,
+            3,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "tipo": "acorde",
+          "nome": "C",
+          "cordas": [
+            -1,
+            3,
+            2,
+            0,
+            1,
+            0
+          ],
+          "dedos": [
+            0,
+            3,
+            2,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "tipo": "acorde",
+          "nome": "G",
+          "cordas": [
+            3,
+            2,
+            0,
+            0,
+            0,
+            3
+          ],
+          "dedos": [
+            2,
+            1,
+            0,
+            0,
+            0,
+            3
+          ]
+        },
+        {
+          "tipo": "acorde",
+          "nome": "D",
+          "cordas": [
+            -1,
+            -1,
+            0,
+            2,
+            3,
+            2
+          ],
+          "dedos": [
+            0,
+            0,
+            0,
+            1,
+            3,
+            2
+          ]
+        },
+        {
+          "tipo": "passos",
+          "itens": [
+            "Toque 1 compasso de cada acorde: Em, C, G, D.",
+            "Repita o ciclo várias vezes, com a batida baixo-cima.",
+            "Cante ou cantarole uma melodia por cima."
+          ]
+        },
+        {
+          "tipo": "exemplo",
+          "texto": "Em (4 tempos), C (4), G (4) e D (4); ao final volta-se ao Em. Cantarolar uma melodia por cima ajuda a manter o ritmo."
+        }
+      ],
+      "pratica": {
+        "orientacao": "Toque a sequência por 8 minutos sem parar. Se errar, siga em frente: manter o ritmo importa mais do que o acorde perfeito.",
+        "minutos": 10,
+        "ferramenta": {
+          "tipo": "metronomo",
+          "bpm": 70,
+          "compasso": 4
+        },
+        "exercicios": [
+          "Toque o ciclo 5 vezes a 70 BPM.",
+          "Cante ou cantarole algo por cima sem parar o violão.",
+          "Grave-se 1 minuto pelo celular e ouça: o ritmo está firme?"
+        ]
+      },
+      "errosComuns": [
+        {
+          "problema": "Perder o ritmo na troca do C para o G.",
+          "solucao": "Estude essa troca sozinha, devagar."
+        },
+        {
+          "problema": "Esquecer a ordem dos acordes.",
+          "solucao": "Escreva Em C G D num papel e leia enquanto toca."
+        }
+      ],
+      "desafio": "Toque 10 ciclos seguidos a 70 BPM sem parar o ritmo, mesmo que algum acorde saia imperfeito.",
+      "criterioAvancar": "Avance quando fizer 10 ciclos seguidos sem parar: isso mostra que você já consegue conduzir uma sequência de acordes."
+    }
+  ]
+}

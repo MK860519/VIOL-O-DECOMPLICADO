@@ -1,0 +1,156 @@
+{
+  "id": "m10",
+  "aulas": [
+    {
+      "id": "m10-a01",
+      "titulo": "Pentatônica menor de Lá",
+      "duracaoMin": 15,
+      "objetivo": "Você vai aprender a escala pentatônica menor de Lá, a mais usada em solos.",
+      "introducao": "A pentatônica é a escala mais usada em solos e improvisos.",
+      "explicacao": "Ela tem 5 notas por oitava e soa bem sobre o acorde de Lá menor. Esta posição usa as casas 5, 7 e 8.",
+      "conteudo": [
+        {
+          "tipo": "passos",
+          "itens": [
+            "6ª corda: casas 5 e 8.",
+            "5ª corda: casas 5 e 7.",
+            "4ª corda: casas 5 e 7.",
+            "3ª corda: casas 5 e 7.",
+            "2ª corda: casas 5 e 8.",
+            "1ª corda: casas 5 e 8."
+          ]
+        },
+        {
+          "tipo": "exemplo",
+          "texto": "Subindo, a sequência é: 6ª corda, casas 5 e 8; 5ª corda, casas 5 e 7; 4ª corda, casas 5 e 7; 3ª corda, casas 5 e 7; 2ª corda, casas 5 e 8; 1ª corda, casas 5 e 8."
+        }
+      ],
+      "pratica": {
+        "orientacao": "Suba e desça a escala devagar, uma nota por tempo, com o metrônomo.",
+        "minutos": 10,
+        "ferramenta": {
+          "tipo": "metronomo",
+          "bpm": 60,
+          "compasso": 4
+        },
+        "exercicios": [
+          "Suba a escala devagar, uma nota por clique, a 60 BPM.",
+          "Desça a escala.",
+          "Toque subindo e descendo 3 vezes sem parar."
+        ]
+      },
+      "errosComuns": [
+        {
+          "problema": "Trocar uma casa e a escala soar 'errada'.",
+          "solucao": "Confira a posição: a nota mais grave é a 6ª corda, casa 5 (Lá)."
+        },
+        {
+          "problema": "Perder-se nas cordas.",
+          "solucao": "Diga o número da corda em voz alta enquanto toca."
+        }
+      ],
+      "desafio": "Toque a escala subindo e descendo 3 vezes a 60 BPM sem consultar a aula.",
+      "criterioAvancar": "Avance quando tocar a escala inteira de memória, subindo e descendo."
+    },
+    {
+      "id": "m10-a02",
+      "titulo": "Improvisando com a pentatônica",
+      "duracaoMin": 15,
+      "objetivo": "Você vai criar as suas primeiras frases usando só a pentatônica.",
+      "introducao": "Improvisar é criar melodias na hora, usando só as notas da escala.",
+      "explicacao": "Toque poucas notas, repita ideias e deixe espaços de silêncio. Isso soa mais musical do que tocar muitas notas seguidas.",
+      "conteudo": [
+        {
+          "tipo": "passos",
+          "itens": [
+            "Escolha 3 notas da escala.",
+            "Crie uma pequena frase com elas.",
+            "Repita a frase e mude uma nota."
+          ]
+        },
+        {
+          "tipo": "dica",
+          "texto": "O silêncio também é música."
+        },
+        {
+          "tipo": "exemplo",
+          "texto": "Uma frase simples: 1ª corda, casa 5, casa 8 e de volta à casa 5 (Lá, Dó, Lá). Repita-a e mude só a última nota."
+        }
+      ],
+      "pratica": {
+        "orientacao": "Improvise por 8 minutos com o metrônomo, usando apenas as notas da pentatônica.",
+        "minutos": 10,
+        "ferramenta": {
+          "tipo": "metronomo",
+          "bpm": 70,
+          "compasso": 4
+        },
+        "exercicios": [
+          "Toque a frase do exemplo 5 vezes a 70 BPM.",
+          "Crie uma frase nova de 3 notas e repita-a.",
+          "Improvise 3 minutos usando duas frases e silêncios."
+        ]
+      },
+      "errosComuns": [
+        {
+          "problema": "Tocar notas demais, sem parar.",
+          "solucao": "Faça frases curtas e deixe silêncios de um ou dois tempos entre elas."
+        },
+        {
+          "problema": "Não saber onde terminar a frase.",
+          "solucao": "Termine em Lá (6ª corda ou 1ª corda, casa 5): soa como um ponto final."
+        }
+      ],
+      "desafio": "Improvise por 2 minutos a 70 BPM com pelo menos 3 frases diferentes e silêncios entre elas.",
+      "criterioAvancar": "Avance quando improvisar 2 minutos sem parar e sem tocar fora da escala."
+    },
+    {
+      "id": "m10-a03",
+      "titulo": "Seu plano de estudo contínuo",
+      "duracaoMin": 12,
+      "objetivo": "Você vai montar a sua rotina de estudos para continuar evoluindo depois dos 30 dias.",
+      "introducao": "Estudar um pouco todos os dias rende mais do que muito de vez em quando.",
+      "explicacao": "Uma rotina de 20 minutos já faz diferença: afinar, aquecer, treinar acordes, ritmo e uma música.",
+      "conteudo": [
+        {
+          "tipo": "passos",
+          "itens": [
+            "2 min: afinar o violão.",
+            "3 min: aquecimento com a escala.",
+            "5 min: troca de acordes.",
+            "5 min: ritmo com o metrônomo.",
+            "5 min: tocar uma música."
+          ]
+        },
+        {
+          "tipo": "exemplo",
+          "texto": "Uma semana possível: segunda e quarta, acordes; terça e quinta, ritmo; sexta, uma sequência completa; fim de semana, revisão."
+        }
+      ],
+      "pratica": {
+        "orientacao": "Monte a sua rotina de 20 minutos e use-a nos próximos 7 dias. Marque cada aula concluída para acompanhar a sua evolução.",
+        "minutos": 10,
+        "ferramenta": {
+          "tipo": "afinador"
+        },
+        "exercicios": [
+          "Escreva sua rotina de 20 minutos em um papel.",
+          "Cumpra a rotina por 3 dias seguidos e marque as aulas concluídas.",
+          "Defina uma meta para a semana, como 'trocar G e C sem errar por 1 minuto'."
+        ]
+      },
+      "errosComuns": [
+        {
+          "problema": "Estudar muito num dia só e abandonar.",
+          "solucao": "Prefira 15 a 20 minutos por dia a 2 horas de uma vez."
+        },
+        {
+          "problema": "Não ter meta.",
+          "solucao": "Escolha uma meta pequena e mensurável por semana."
+        }
+      ],
+      "desafio": "Cumpra a sua rotina de 20 minutos por 7 dias seguidos e marque cada dia.",
+      "criterioAvancar": "Você concluiu o método quando tiver uma rotina escrita e souber qual é a próxima meta para a sua evolução."
+    }
+  ]
+}

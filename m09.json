@@ -1,0 +1,170 @@
+{
+  "id": "m09",
+  "aulas": [
+    {
+      "id": "m09-a01",
+      "titulo": "Batida com abafamento",
+      "duracaoMin": 12,
+      "objetivo": "Você vai aprender o abafamento, que deixa o som curto e seco.",
+      "introducao": "O abafamento dá firmeza ao ritmo e muda o caráter da música.",
+      "explicacao": "Apoie a lateral da mão direita, perto do cavalete, sobre as cordas. O som sai curto e seco.",
+      "conteudo": [
+        {
+          "tipo": "passos",
+          "itens": [
+            "Monte o Em.",
+            "Encoste de leve a lateral da mão direita perto do cavalete.",
+            "Toque para baixo mantendo a mão apoiada."
+          ]
+        },
+        {
+          "tipo": "exemplo",
+          "texto": "Toque Em com a mão apoiada por 4 compassos e depois solte a mão por 4 compassos; o som muda de seco para aberto."
+        }
+      ],
+      "pratica": {
+        "orientacao": "Alterne 4 compassos abafados com 4 compassos normais, usando o metrônomo.",
+        "minutos": 8,
+        "ferramenta": {
+          "tipo": "metronomo",
+          "bpm": 70,
+          "compasso": 4
+        },
+        "exercicios": [
+          "Toque 4 compassos de Em abafado, uma batida por tempo, a 70 BPM.",
+          "Toque 4 compassos soltos e perceba a diferença.",
+          "Alterne abafado e solto por 3 minutos."
+        ]
+      },
+      "errosComuns": [
+        {
+          "problema": "O som some por completo.",
+          "solucao": "Você está apertando demais: apoie só de leve."
+        },
+        {
+          "problema": "O som quase não muda.",
+          "solucao": "Encoste a lateral da mão mais perto do cavalete."
+        }
+      ],
+      "desafio": "Toque 8 compassos alternando 4 abafados e 4 soltos, sem perder o ritmo.",
+      "criterioAvancar": "Avance quando ouvir a diferença e conseguir alternar entre abafado e solto sem parar o ritmo."
+    },
+    {
+      "id": "m09-a02",
+      "titulo": "Dedilhado básico",
+      "duracaoMin": 12,
+      "objetivo": "Você vai aprender um padrão de dedilhado no Am, usando polegar, indicador, médio e anelar.",
+      "introducao": "No dedilhado, cada dedo toca uma corda separada, em vez de uma batida única.",
+      "explicacao": "O polegar toca as cordas graves, o indicador a 3ª, o médio a 2ª e o anelar a 1ª. Comece com um padrão simples no acorde Am.",
+      "conteudo": [
+        {
+          "tipo": "acorde",
+          "nome": "Am",
+          "cordas": [
+            -1,
+            0,
+            2,
+            2,
+            1,
+            0
+          ],
+          "dedos": [
+            0,
+            0,
+            2,
+            3,
+            1,
+            0
+          ]
+        },
+        {
+          "tipo": "passos",
+          "itens": [
+            "Polegar na 5ª corda.",
+            "Indicador na 3ª corda.",
+            "Médio na 2ª corda.",
+            "Anelar na 1ª corda."
+          ]
+        },
+        {
+          "tipo": "exemplo",
+          "texto": "No Am, conte 1-2-3-4 e toque uma corda por tempo: polegar (5ª), indicador (3ª), médio (2ª), anelar (1ª)."
+        }
+      ],
+      "pratica": {
+        "orientacao": "Repita o padrão polegar, indicador, médio e anelar por 5 minutos, devagar.",
+        "minutos": 8,
+        "ferramenta": {
+          "tipo": "metronomo",
+          "bpm": 60,
+          "compasso": 4
+        },
+        "exercicios": [
+          "Toque o padrão 10 vezes devagar a 60 BPM.",
+          "Repita no Em: polegar na 6ª corda, depois 3ª, 2ª e 1ª.",
+          "Alterne 4 repetições de Am e 4 de Em, sem parar."
+        ]
+      },
+      "errosComuns": [
+        {
+          "problema": "Os dedos erram a corda.",
+          "solucao": "Deixe os dedos pousados nas cordas antes de tocar; depois solte um de cada vez."
+        },
+        {
+          "problema": "O polegar toca forte demais.",
+          "solucao": "Toque as quatro notas com o mesmo volume."
+        }
+      ],
+      "desafio": "Toque o padrão no Am 8 vezes seguidas a 60 BPM, com as quatro notas no mesmo volume.",
+      "criterioAvancar": "Avance quando tocar o padrão por 2 minutos sem errar a ordem dos dedos."
+    },
+    {
+      "id": "m09-a03",
+      "titulo": "Ritmo em 3/4 (valsa)",
+      "duracaoMin": 12,
+      "objetivo": "Você vai aprender o compasso 3/4, o balanço da valsa.",
+      "introducao": "O compasso 3/4 tem três tempos e dá um balanço diferente, como o da valsa.",
+      "explicacao": "Contamos 1-2-3, com o primeiro tempo mais forte. Toque grave no 1 e acordes leves no 2 e no 3.",
+      "conteudo": [
+        {
+          "tipo": "passos",
+          "itens": [
+            "Conte 1-2-3, 1-2-3.",
+            "Tempo 1: nota grave do acorde.",
+            "Tempos 2 e 3: batida leve para baixo."
+          ]
+        },
+        {
+          "tipo": "exemplo",
+          "texto": "Em 3/4 com Am: toque o grave da 5ª corda no tempo 1 e duas batidas leves nos tempos 2 e 3: GRAVE, leve, leve."
+        }
+      ],
+      "pratica": {
+        "orientacao": "Toque Am e Em em 3/4, 4 compassos de cada, por 5 minutos.",
+        "minutos": 8,
+        "ferramenta": {
+          "tipo": "metronomo",
+          "bpm": 80,
+          "compasso": 3
+        },
+        "exercicios": [
+          "Com o metrônomo em 3/4 a 80 BPM, bata palmas só no 1 por 1 minuto.",
+          "Toque Am no padrão grave-leve-leve por 2 minutos.",
+          "Alterne 4 compassos de Am e 4 de Em, sem parar."
+        ]
+      },
+      "errosComuns": [
+        {
+          "problema": "Contar 4 em vez de 3.",
+          "solucao": "Conte 'UM-dois-três' em voz alta e deixe o metrônomo em 3/4."
+        },
+        {
+          "problema": "Tocar todas as batidas com a mesma força.",
+          "solucao": "Dê mais força ao tempo 1 e deixe o 2 e o 3 leves."
+        }
+      ],
+      "desafio": "Toque 8 compassos de Am em 3/4, a 80 BPM, com o 1 mais forte, sem se perder.",
+      "criterioAvancar": "Avance quando mantiver o balanço de 3 tempos por 2 minutos sem se perder."
+    }
+  ]
+}

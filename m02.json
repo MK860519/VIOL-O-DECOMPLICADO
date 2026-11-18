@@ -1,0 +1,173 @@
+{
+  "id": "m02",
+  "aulas": [
+    {
+      "id": "m02-a01",
+      "titulo": "Cordas soltas e seus nomes",
+      "duracaoMin": 8,
+      "objetivo": "Você vai aprender os nomes das 6 cordas soltas: Mi, Lá, Ré, Sol, Si, Mi.",
+      "introducao": "Conhecer o nome de cada corda é o primeiro passo para entender cifras e partituras.",
+      "explicacao": "Da 6ª para a 1ª, as cordas soltas são E, A, D, G, B, E (Mi, Lá, Ré, Sol, Si, Mi). As duas cordas Mi têm o mesmo nome, mas soam em alturas diferentes.",
+      "conteudo": [
+        {
+          "tipo": "passos",
+          "itens": [
+            "Toque a 6ª corda e diga: Mi.",
+            "Siga pela 5ª (Lá), 4ª (Ré), 3ª (Sol), 2ª (Si) e 1ª (Mi).",
+            "Volte da 1ª para a 6ª repetindo os nomes."
+          ]
+        },
+        {
+          "tipo": "texto",
+          "texto": "As seis notas, em ordem, formam a base de tudo o que vem a seguir."
+        },
+        {
+          "tipo": "exemplo",
+          "texto": "A 4ª corda solta é a nota Ré (D em cifra). Quando uma cifra trouxer a letra D, ela fala do acorde de Ré, que tem essa nota como base."
+        }
+      ],
+      "pratica": {
+        "orientacao": "Toque as cordas soltas em ordem, falando o nome de cada uma, primeiro devagar e depois sem olhar para o violão.",
+        "minutos": 4,
+        "exercicios": [
+          "Toque as 6 cordas soltas, da 6ª para a 1ª, dizendo Mi, Lá, Ré, Sol, Si, Mi.",
+          "Diga um nome (por exemplo, Sol) e toque a corda correspondente sem olhar.",
+          "Toque da 1ª para a 6ª, dizendo os nomes na ordem inversa."
+        ]
+      },
+      "errosComuns": [
+        {
+          "problema": "Esquecer que existem dois Mi.",
+          "solucao": "A 6ª é o Mi grave e a 1ª é o Mi agudo: mesmo nome, alturas diferentes."
+        },
+        {
+          "problema": "Confundir Lá com Sol.",
+          "solucao": "Da 6ª para a 1ª a ordem é Mi, Lá, Ré, Sol, Si, Mi. Lá é a 5ª corda e Sol é a 3ª."
+        }
+      ],
+      "desafio": "Diga os nomes das 6 cordas de memória e, em seguida, toque Sol, Mi agudo e Lá sem olhar.",
+      "criterioAvancar": "Avance quando souber os nomes de todas as cordas sem consultar a aula e achar qualquer uma delas sem olhar."
+    },
+    {
+      "id": "m02-a02",
+      "titulo": "A mão direita: palheta ou polegar",
+      "duracaoMin": 10,
+      "objetivo": "Você vai aprender a segurar a palheta (ou usar o polegar), bater nas cordas com o pulso solto e seguir o clique do metrônomo.",
+      "introducao": "A mão que toca define a clareza do som e o ritmo.",
+      "explicacao": "Você pode tocar com palheta ou com o polegar. Com a palheta, segure-a entre o polegar e o indicador, deixando só a ponta aparecer. Sem palheta, deixe a mão relaxada e passe o polegar sobre as cordas. Nos dois casos, o movimento vem do pulso solto, não do braço inteiro, e a batida é feita sobre a boca do violão.",
+      "conteudo": [
+        {
+          "tipo": "texto",
+          "texto": "Antes de começar, o metrônomo: ele é um relógio musical que faz um 'clique' em intervalos iguais. A velocidade é medida em BPM (batidas por minuto): 60 BPM é um clique por segundo. Cada clique é um 'tempo'. Nesta aula, toque uma batida a cada clique."
+        },
+        {
+          "tipo": "passos",
+          "itens": [
+            "Segure a palheta com firmeza leve (ou prepare o polegar).",
+            "Toque a 1ª corda solta para baixo, uma vez por clique.",
+            "Depois alterne para baixo e para cima, mantendo o pulso solto."
+          ]
+        },
+        {
+          "tipo": "dica",
+          "texto": "Se o som ficar áspero, relaxe a mão: apertar demais atrapalha."
+        },
+        {
+          "tipo": "exemplo",
+          "texto": "A 60 BPM você ouve 1 clique por segundo. Toque uma batida para baixo em cada clique, como o tique-taque de um relógio."
+        }
+      ],
+      "pratica": {
+        "orientacao": "Toque uma corda solta, uma batida para baixo a cada tempo, acompanhando o metrônomo.",
+        "minutos": 5,
+        "ferramenta": {
+          "tipo": "metronomo",
+          "bpm": 60,
+          "compasso": 4
+        },
+        "exercicios": [
+          "Toque a 1ª corda solta para baixo, uma vez por clique, por 1 minuto a 60 BPM.",
+          "Alterne para baixo e para cima (duas batidas por clique) por 1 minuto, bem devagar.",
+          "Balance a mão por 10 segundos entre as séries para manter o pulso solto."
+        ]
+      },
+      "errosComuns": [
+        {
+          "problema": "A palheta escorrega ou cai.",
+          "solucao": "Segure com um pouco mais de firmeza, deixando só a ponta de fora. Palhetas mais grossas escorregam menos."
+        },
+        {
+          "problema": "O braço inteiro se move e a mão cansa.",
+          "solucao": "Apoie o antebraço no corpo do violão e mexa só o pulso."
+        },
+        {
+          "problema": "As batidas ficam fora do clique.",
+          "solucao": "Reduza para 50 BPM ou desligue o metrônomo e conte em voz alta até acertar o ritmo."
+        }
+      ],
+      "desafio": "Toque 8 batidas seguidas, uma por clique a 60 BPM, sem errar o tempo e sem tensão no pulso.",
+      "criterioAvancar": "Avance quando conseguir acompanhar o metrônomo a 60 BPM por 1 minuto sem se perder e com a mão relaxada."
+    },
+    {
+      "id": "m02-a03",
+      "titulo": "A mão esquerda: casas e dedos",
+      "duracaoMin": 10,
+      "objetivo": "Você vai aprender a numerar os dedos e a pressionar a corda, perto do traste, para a nota soar limpa.",
+      "introducao": "Agora vamos usar a mão do braço para mudar as notas.",
+      "explicacao": "Os dedos são numerados: 1 indicador, 2 médio, 3 anelar e 4 mínimo. Pressione a corda com a ponta do dedo, perto do traste, sem encostar nas cordas vizinhas.",
+      "conteudo": [
+        {
+          "tipo": "texto",
+          "texto": "Metrônomo a 50 BPM: um pouco mais lento que 60. Cada clique é um tempo; apoie um dedo a cada clique. Se ficar difícil acompanhar, faça sem pressa e depois volte ao metrônomo."
+        },
+        {
+          "tipo": "passos",
+          "itens": [
+            "Coloque o dedo 1 na casa 1 da 1ª corda e toque.",
+            "Coloque o dedo 2 na casa 2 e toque.",
+            "Coloque o dedo 3 na casa 3 e o dedo 4 na casa 4.",
+            "Volte fazendo o caminho inverso."
+          ]
+        },
+        {
+          "tipo": "dica",
+          "texto": "Unhas curtas na mão do braço deixam o toque mais limpo."
+        },
+        {
+          "tipo": "exemplo",
+          "texto": "No exercício 1-2-3-4 na 1ª corda: dedo 1 na casa 1 (Fá), dedo 2 na casa 2 (Fá sustenido), dedo 3 na casa 3 (Sol) e dedo 4 na casa 4 (Sol sustenido)."
+        }
+      ],
+      "pratica": {
+        "orientacao": "Faça o exercício 1-2-3-4 na 1ª corda, devagar, buscando um som limpo em cada nota.",
+        "minutos": 5,
+        "ferramenta": {
+          "tipo": "metronomo",
+          "bpm": 50,
+          "compasso": 4
+        },
+        "exercicios": [
+          "Faça o 1-2-3-4 na 1ª corda, a 50 BPM, uma nota por clique, 5 vezes.",
+          "Repita na 2ª corda (Si), tocando devagar.",
+          "Confira cada nota: se zumbir, aproxime o dedo do traste e pressione com a ponta."
+        ]
+      },
+      "errosComuns": [
+        {
+          "problema": "A nota sai abafada ou com zumbido.",
+          "solucao": "Pressione com a ponta do dedo, perto do traste (sem ficar em cima dele), com o dedo bem curvado."
+        },
+        {
+          "problema": "A ponta dos dedos dói.",
+          "solucao": "É comum no começo. Estude em sessões curtas de 5 a 10 minutos e descanse; a dor costuma diminuir com a prática regular. Se for forte, pare."
+        },
+        {
+          "problema": "O dedo encosta na corda vizinha.",
+          "solucao": "Curve mais o dedo e mantenha a unha curta."
+        }
+      ],
+      "desafio": "Faça o 1-2-3-4 na 1ª corda, subindo e descendo, a 50 BPM, com todas as notas limpas, 3 vezes seguidas.",
+      "criterioAvancar": "Avance quando a maioria das notas soar limpa e você souber a numeração dos dedos: 1 indicador, 2 médio, 3 anelar, 4 mínimo."
+    }
+  ]
+}

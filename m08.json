@@ -1,0 +1,199 @@
+{
+  "id": "m08",
+  "aulas": [
+    {
+      "id": "m08-a01",
+      "titulo": "O que é a pestana",
+      "duracaoMin": 10,
+      "objetivo": "Você vai entender o que é a pestana e treinar o primeiro passo: cobrir duas cordas com um dedo.",
+      "introducao": "A pestana é uma técnica em que um dedo cobre várias cordas ao mesmo tempo.",
+      "explicacao": "O dedo indicador fica deitado sobre as cordas, na mesma casa, funcionando como um traste móvel. Use a lateral do dedo e apoie o polegar atrás do braço.",
+      "conteudo": [
+        {
+          "tipo": "passos",
+          "itens": [
+            "Deite o dedo 1 sobre as cordas 1 e 2, na casa 1.",
+            "Toque as duas cordas e confira se soam limpas.",
+            "Aumente aos poucos a quantidade de cordas cobertas."
+          ]
+        },
+        {
+          "tipo": "dica",
+          "texto": "A pestana cansa a mão no começo. Faça pausas curtas."
+        },
+        {
+          "tipo": "exemplo",
+          "texto": "Na casa 1, o indicador deitado cobre a 1ª e a 2ª cordas; ao tocá-las, as duas devem soar sem zumbido."
+        }
+      ],
+      "pratica": {
+        "orientacao": "Pratique a pestana nas 2 cordas mais finas por 3 minutos, com pausas de 20 segundos.",
+        "minutos": 5,
+        "exercicios": [
+          "Faça a pestana nas 2 cordas mais finas, na casa 1, 5 vezes.",
+          "Faça a pestana nas 3 cordas mais finas, 5 vezes.",
+          "Ajuste: aproxime o dedo do traste e gire levemente para a lateral."
+        ]
+      },
+      "errosComuns": [
+        {
+          "problema": "Uma das cordas zumbe.",
+          "solucao": "Mova o dedo um pouco para perto do traste e aumente a pressão aos poucos."
+        },
+        {
+          "problema": "A mão cansa rápido.",
+          "solucao": "Faça pausas curtas de 20 segundos. A força aumenta com o tempo."
+        }
+      ],
+      "desafio": "Faça a pestana nas 3 cordas mais finas e toque uma de cada vez, com as 3 soando limpas.",
+      "criterioAvancar": "Avance quando 2 cordas soarem limpas na pestana, mesmo que a 3ª ainda falhe."
+    },
+    {
+      "id": "m08-a02",
+      "titulo": "F simplificado",
+      "duracaoMin": 12,
+      "objetivo": "Você vai tocar o F simplificado, usando só as 4 cordas mais finas.",
+      "introducao": "O F é um dos acordes que mais assustam. A versão simplificada é um ótimo passo.",
+      "explicacao": "Ele usa apenas as 4 cordas mais finas, com uma pestana pequena na casa 1.",
+      "conteudo": [
+        {
+          "tipo": "acorde",
+          "nome": "F (simplificado)",
+          "cordas": [
+            -1,
+            -1,
+            3,
+            2,
+            1,
+            1
+          ],
+          "dedos": [
+            0,
+            0,
+            3,
+            2,
+            1,
+            1
+          ]
+        },
+        {
+          "tipo": "passos",
+          "itens": [
+            "Dedo 1 deitado sobre as cordas 1 e 2, casa 1.",
+            "Dedo 2 na 3ª corda, casa 2.",
+            "Dedo 3 na 4ª corda, casa 3.",
+            "Toque da 4ª corda para a 1ª."
+          ]
+        },
+        {
+          "tipo": "exemplo",
+          "texto": "No C, o dedo 1 já está na 2ª corda, casa 1. No F simplificado ele continua ali e passa a cobrir também a 1ª corda."
+        }
+      ],
+      "pratica": {
+        "orientacao": "Monte o F simplificado 5 vezes. Depois alterne F e C por 3 minutos.",
+        "minutos": 8,
+        "exercicios": [
+          "Monte o F simplificado e toque da 4ª à 1ª corda, 5 vezes.",
+          "Alterne C e F, uma batida por tempo, 8 trocas.",
+          "Se alguma corda abafar, ajuste a pestana e tente de novo."
+        ]
+      },
+      "errosComuns": [
+        {
+          "problema": "A 1ª corda não soa.",
+          "solucao": "Gire o dedo 1 levemente de lado e aproxime-o do traste."
+        },
+        {
+          "problema": "Os dedos 2 e 3 abafam cordas vizinhas.",
+          "solucao": "Curve-os e pressione só com a ponta."
+        }
+      ],
+      "desafio": "Alterne C e F 8 vezes, sem parar, com as 4 cordas do F soando.",
+      "criterioAvancar": "Avance quando conseguir montar o F simplificado e tocar as 4 cordas, mesmo que leve alguns segundos."
+    },
+    {
+      "id": "m08-a03",
+      "titulo": "F completo e Bm",
+      "duracaoMin": 15,
+      "objetivo": "Você vai conhecer o F completo e o Bm, acordes com pestana, e entender que eles levam tempo.",
+      "introducao": "Com a pestana mais firme, você pode tocar o F completo e o Bm.",
+      "explicacao": "O F completo tem pestana na casa 1 nas 6 cordas. O Bm é um acorde com pestana na casa 2.",
+      "conteudo": [
+        {
+          "tipo": "acorde",
+          "nome": "F",
+          "cordas": [
+            1,
+            3,
+            3,
+            2,
+            1,
+            1
+          ],
+          "dedos": [
+            1,
+            3,
+            4,
+            2,
+            1,
+            1
+          ]
+        },
+        {
+          "tipo": "acorde",
+          "nome": "Bm",
+          "cordas": [
+            -1,
+            2,
+            4,
+            4,
+            3,
+            2
+          ],
+          "dedos": [
+            0,
+            1,
+            3,
+            4,
+            2,
+            1
+          ]
+        },
+        {
+          "tipo": "passos",
+          "itens": [
+            "F: pestana na casa 1, dedo 2 na casa 2 da 3ª corda, dedos 3 e 4 na casa 3.",
+            "Bm: pestana na casa 2, dedo 2 na casa 3 da 2ª corda e dedos 3 e 4 na casa 4.",
+            "Toque corda por corda para encontrar as que abafam."
+          ]
+        },
+        {
+          "tipo": "exemplo",
+          "texto": "O F completo é o formato do Mi maior deslocado uma casa para frente, com o indicador fazendo a pestana na casa 1."
+        }
+      ],
+      "pratica": {
+        "orientacao": "Alterne a prática entre F e Bm, 5 minutos para cada um. Tenha paciência: esses acordes levam semanas para soar bem.",
+        "minutos": 10,
+        "exercicios": [
+          "Monte o F completo e toque corda por corda, 3 vezes.",
+          "Monte o Bm e toque da 5ª à 1ª corda.",
+          "Alterne F e Bm, uma batida por troca, 4 vezes."
+        ]
+      },
+      "errosComuns": [
+        {
+          "problema": "Algumas cordas zumbem.",
+          "solucao": "Toque corda por corda, descubra qual falha e ajuste a pestana."
+        },
+        {
+          "problema": "O pulso dói.",
+          "solucao": "Pare, relaxe e retome mais tarde. Esses acordes levam semanas."
+        }
+      ],
+      "desafio": "Toque o F completo e o Bm, cada um com pelo menos 4 cordas soando limpas, e diga qual foi mais fácil.",
+      "criterioAvancar": "Avance mesmo que ainda não soem perfeitos, pois levam semanas. Prossiga quando conseguir montá-los com pelo menos 4 cordas limpas."
+    }
+  ]
+}

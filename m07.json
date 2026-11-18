@@ -1,0 +1,150 @@
+{
+  "id": "m07",
+  "aulas": [
+    {
+      "id": "m07-a01",
+      "titulo": "Lendo tablatura",
+      "duracaoMin": 10,
+      "objetivo": "Você vai aprender a ler uma tablatura: onde ficam as cordas e como interpretar os números.",
+      "introducao": "A tablatura mostra onde colocar os dedos, sem exigir leitura de partitura.",
+      "explicacao": "Ela tem 6 linhas, uma para cada corda. A linha de baixo é a 6ª corda e a de cima é a 1ª. Os números indicam a casa: 0 é corda solta.",
+      "conteudo": [
+        {
+          "tipo": "passos",
+          "itens": [
+            "Linha de baixo: 6ª corda (a mais grossa).",
+            "Número = casa a pressionar.",
+            "Leia da esquerda para a direita."
+          ]
+        },
+        {
+          "tipo": "exemplo",
+          "texto": "O número 3 na linha de baixo significa 6ª corda, casa 3 (nota Sol). O número 0 na linha de cima é a 1ª corda solta (Mi)."
+        }
+      ],
+      "pratica": {
+        "orientacao": "Pratique tocando uma sequência de 3 notas em cada corda solta, seguindo uma tablatura simples.",
+        "minutos": 6,
+        "exercicios": [
+          "Toque na 1ª corda, lendo da esquerda para a direita: 0, 1, 3, 0.",
+          "Desenhe no papel 6 linhas e marque a 'casa 2 da 4ª corda'.",
+          "Toque a 6ª corda na casa 3 e depois solta, e diga qual nota soou em cada uma."
+        ]
+      },
+      "errosComuns": [
+        {
+          "problema": "Achar que a linha de cima é a 6ª corda.",
+          "solucao": "A linha de cima é a 1ª corda (a mais fina) e a de baixo é a 6ª (a mais grossa)."
+        },
+        {
+          "problema": "Confundir o número da casa com o número do dedo.",
+          "solucao": "O número é a casa, não o dedo. Escolha o dedo que alcançar melhor aquela casa."
+        }
+      ],
+      "desafio": "Toque, sem ajuda, esta sequência na 1ª corda: 0 – 1 – 3 – 1 – 0 e diga o nome das notas.",
+      "criterioAvancar": "Avance quando souber dizer qual corda e qual casa cada número da tablatura indica."
+    },
+    {
+      "id": "m07-a02",
+      "titulo": "Notas na 1ª corda",
+      "duracaoMin": 10,
+      "objetivo": "Você vai aprender as notas Mi, Fá, Sol e Lá na 1ª corda e tocar uma pequena melodia.",
+      "introducao": "Conhecer as notas de uma corda ajuda a se orientar no braço inteiro.",
+      "explicacao": "Na 1ª corda, solta é Mi; casa 1 é Fá; casa 3 é Sol; casa 5 é Lá. Use os dedos 1, 3 e 4 para alcançar essas casas.",
+      "conteudo": [
+        {
+          "tipo": "passos",
+          "itens": [
+            "Solta: Mi.",
+            "Casa 1: Fá (dedo 1).",
+            "Casa 3: Sol (dedo 3).",
+            "Casa 5: Lá (dedo 4)."
+          ]
+        },
+        {
+          "tipo": "dica",
+          "texto": "Tocar devagar e com som limpo vale mais do que tocar rápido."
+        },
+        {
+          "tipo": "exemplo",
+          "texto": "Mi (solta), Fá (casa 1), Sol (casa 3) e Lá (casa 5) formam uma sequência que sobe, como uma escadinha."
+        }
+      ],
+      "pratica": {
+        "orientacao": "Toque Mi, Fá, Sol, Lá e volte, 10 vezes seguidas, acompanhando o metrônomo.",
+        "minutos": 6,
+        "ferramenta": {
+          "tipo": "metronomo",
+          "bpm": 60,
+          "compasso": 4
+        },
+        "exercicios": [
+          "Toque Mi, Fá, Sol, Lá subindo e Lá, Sol, Fá, Mi descendo, 10 vezes a 60 BPM.",
+          "Toque só Sol e Mi, alternando.",
+          "Toque 'Mi – Fá – Sol – Fá – Mi' de memória."
+        ]
+      },
+      "errosComuns": [
+        {
+          "problema": "A nota da casa 5 sai fraca.",
+          "solucao": "Pressione mais perto do traste e use o dedo 4 bem curvado."
+        },
+        {
+          "problema": "Usar o dedo errado e travar a mão.",
+          "solucao": "Use o dedo 1 na casa 1, o 3 na casa 3 e o 4 na casa 5."
+        }
+      ],
+      "desafio": "Toque Mi – Fá – Sol – Lá – Sol – Fá – Mi 5 vezes seguidas a 60 BPM, com todas as notas limpas.",
+      "criterioAvancar": "Avance quando souber a nota de cada casa nessa corda sem consultar a aula."
+    },
+    {
+      "id": "m07-a03",
+      "titulo": "Escala de Dó maior",
+      "duracaoMin": 15,
+      "objetivo": "Você vai tocar a escala de Dó maior, de Dó a Dó, subindo e descendo.",
+      "introducao": "A escala de Dó maior é a base para entender melodias.",
+      "explicacao": "As notas são Dó, Ré, Mi, Fá, Sol, Lá, Si, Dó. Sobem pelas cordas 5, 4, 3 e 2 na ordem abaixo.",
+      "conteudo": [
+        {
+          "tipo": "passos",
+          "itens": [
+            "5ª corda, casa 3 (Dó).",
+            "4ª corda: solta (Ré), casa 2 (Mi), casa 3 (Fá).",
+            "3ª corda: solta (Sol), casa 2 (Lá).",
+            "2ª corda: solta (Si), casa 1 (Dó)."
+          ]
+        },
+        {
+          "tipo": "exemplo",
+          "texto": "A escala começa no Dó da 5ª corda, casa 3, e termina no Dó da 2ª corda, casa 1: as duas notas têm o mesmo nome, mas a segunda é mais aguda."
+        }
+      ],
+      "pratica": {
+        "orientacao": "Suba e desça a escala duas vezes por dia, devagar, com o metrônomo. Aumente a velocidade apenas quando o som estiver limpo.",
+        "minutos": 8,
+        "ferramenta": {
+          "tipo": "metronomo",
+          "bpm": 60,
+          "compasso": 4
+        },
+        "exercicios": [
+          "Toque a escala subindo, uma nota por clique, a 60 BPM.",
+          "Toque descendo.",
+          "Toque subindo e descendo 3 vezes sem parar."
+        ]
+      },
+      "errosComuns": [
+        {
+          "problema": "Esquecer em que corda está.",
+          "solucao": "Diga a nota em voz alta enquanto toca: Dó, Ré, Mi..."
+        },
+        {
+          "problema": "As notas soam desiguais.",
+          "solucao": "Pressione com a mesma força e toque com o mesmo volume."
+        }
+      ],
+      "desafio": "Toque a escala completa, subindo e descendo, a 60 BPM, 3 vezes sem errar nenhuma nota.",
+      "criterioAvancar": "Avance quando tocar a escala subindo e descendo sem consultar a aula."
+    }
+  ]
+}

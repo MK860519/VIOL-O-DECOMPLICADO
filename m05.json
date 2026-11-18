@@ -1,0 +1,223 @@
+{
+  "id": "m05",
+  "aulas": [
+    {
+      "id": "m05-a01",
+      "titulo": "Acordes D (Ré) e A (Lá)",
+      "duracaoMin": 12,
+      "objetivo": "Você vai aprender os acordes D (Ré) e A (Lá) e a tocar cada um a partir da corda certa.",
+      "introducao": "Com esses dois acordes, o seu repertório cresce bastante.",
+      "explicacao": "O D usa as 4 cordas mais finas e o A usa da 5ª para a 1ª. Os dedos ficam bem próximos uns dos outros, então vá sem pressa.",
+      "conteudo": [
+        {
+          "tipo": "acorde",
+          "nome": "D",
+          "cordas": [
+            -1,
+            -1,
+            0,
+            2,
+            3,
+            2
+          ],
+          "dedos": [
+            0,
+            0,
+            0,
+            1,
+            3,
+            2
+          ]
+        },
+        {
+          "tipo": "acorde",
+          "nome": "A",
+          "cordas": [
+            -1,
+            0,
+            2,
+            2,
+            2,
+            0
+          ],
+          "dedos": [
+            0,
+            0,
+            1,
+            2,
+            3,
+            0
+          ]
+        },
+        {
+          "tipo": "passos",
+          "itens": [
+            "Monte o D e toque da 4ª corda para a 1ª.",
+            "Monte o A e toque da 5ª corda para a 1ª.",
+            "Alterne os dois lentamente."
+          ]
+        },
+        {
+          "tipo": "exemplo",
+          "texto": "No D, comece a batida na 4ª corda; no A, na 5ª. Evitar as cordas mais grossas evita o zumbido."
+        }
+      ],
+      "pratica": {
+        "orientacao": "Monte cada acorde 5 vezes. Depois, alterne D e A por 3 minutos, no seu ritmo.",
+        "minutos": 8,
+        "exercicios": [
+          "Monte o D e toque da 4ª à 1ª corda, 5 vezes.",
+          "Monte o A e toque da 5ª à 1ª corda, 5 vezes.",
+          "Alterne D e A, uma batida para baixo em cada, 8 vezes, devagar."
+        ]
+      },
+      "errosComuns": [
+        {
+          "problema": "No A, os três dedos não cabem lado a lado na casa 2.",
+          "solucao": "Curve bem os dedos, aproxime o cotovelo do corpo e monte um dedo de cada vez. É normal levar alguns dias."
+        },
+        {
+          "problema": "A 6ª corda soa no D ou no A.",
+          "solucao": "Comece a batida na corda certa: a 4ª no D e a 5ª no A."
+        }
+      ],
+      "desafio": "Alterne D e A 8 vezes, sem parar, uma batida em cada acorde, com a troca no ritmo.",
+      "criterioAvancar": "Avance quando montar D e A sem consultar o diagrama e fizer 4 trocas seguidas sem parar."
+    },
+    {
+      "id": "m05-a02",
+      "titulo": "Acordes C (Dó) e G (Sol)",
+      "duracaoMin": 12,
+      "objetivo": "Você vai aprender os acordes C (Dó) e G (Sol), dois dos mais usados no violão.",
+      "introducao": "Esses dois acordes são muito usados e ajudam a abrir o repertório.",
+      "explicacao": "O C é tocado da 5ª para a 1ª corda. O G usa as 6 cordas, com dedos nas casas 2 e 3.",
+      "conteudo": [
+        {
+          "tipo": "acorde",
+          "nome": "C",
+          "cordas": [
+            -1,
+            3,
+            2,
+            0,
+            1,
+            0
+          ],
+          "dedos": [
+            0,
+            3,
+            2,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "tipo": "acorde",
+          "nome": "G",
+          "cordas": [
+            3,
+            2,
+            0,
+            0,
+            0,
+            3
+          ],
+          "dedos": [
+            2,
+            1,
+            0,
+            0,
+            0,
+            3
+          ]
+        },
+        {
+          "tipo": "passos",
+          "itens": [
+            "Monte o C e toque da 5ª corda para a 1ª.",
+            "Monte o G e toque as 6 cordas.",
+            "Alterne os dois sem pressa."
+          ]
+        },
+        {
+          "tipo": "exemplo",
+          "texto": "O C é tocado da 5ª corda para a 1ª; o G usa as 6 cordas. Se o G soar abafado, confira se os dedos não encostam nas cordas vizinhas."
+        }
+      ],
+      "pratica": {
+        "orientacao": "Monte cada acorde 5 vezes. Depois, alterne C e G por 3 minutos.",
+        "minutos": 8,
+        "exercicios": [
+          "Monte o C e toque da 5ª à 1ª corda, 5 vezes.",
+          "Monte o G e toque as 6 cordas, 5 vezes.",
+          "Alterne C e G, uma batida por tempo, 8 compassos a 60 BPM."
+        ]
+      },
+      "errosComuns": [
+        {
+          "problema": "No G, o dedo 3 encosta na 2ª corda.",
+          "solucao": "Curve o dedo 3 e pressione só a 1ª corda, na casa 3."
+        },
+        {
+          "problema": "No C, o dedo 1 abafa a 1ª corda.",
+          "solucao": "Curve o dedo 1 e pressione só a 2ª corda, na casa 1."
+        }
+      ],
+      "desafio": "Alterne C e G, uma batida para baixo por tempo, por 4 compassos de cada, sem parar, a 60 BPM.",
+      "criterioAvancar": "Avance quando montar C e G sem consultar o diagrama e fizer 4 trocas entre eles sem parar."
+    },
+    {
+      "id": "m05-a03",
+      "titulo": "Trocando acordes sem parar",
+      "duracaoMin": 12,
+      "objetivo": "Você vai aprender a trocar de acordes sem interromper o ritmo.",
+      "introducao": "Trocar de acordes sem interromper o ritmo é a habilidade mais importante dessa fase.",
+      "explicacao": "Antes de soltar um acorde, olhe para o próximo e leve os dedos juntos. Se um dedo puder ficar parado entre dois acordes, deixe-o.",
+      "conteudo": [
+        {
+          "tipo": "passos",
+          "itens": [
+            "Escolha dois acordes que você já domina.",
+            "Faça uma batida para baixo em cada um, trocando no tempo 1.",
+            "Quando errar, continue no ritmo e acerte na volta."
+          ]
+        },
+        {
+          "tipo": "dica",
+          "texto": "Velocidade vem depois da limpeza do som: comece devagar."
+        },
+        {
+          "tipo": "exemplo",
+          "texto": "Antes do tempo 4 do compasso, olhe o próximo acorde e leve os dedos a caminho; a troca acontece no tempo 1."
+        }
+      ],
+      "pratica": {
+        "orientacao": "Alterne G e C com uma batida para baixo por tempo, uma troca por compasso, por 5 minutos.",
+        "minutos": 8,
+        "ferramenta": {
+          "tipo": "metronomo",
+          "bpm": 60,
+          "compasso": 4
+        },
+        "exercicios": [
+          "Alterne G e C, uma troca por compasso, por 3 minutos a 60 BPM.",
+          "Diminua para 50 BPM se errar mais de duas trocas seguidas.",
+          "Faça 4 trocas seguidas sem olhar para a mão esquerda."
+        ]
+      },
+      "errosComuns": [
+        {
+          "problema": "Parar o ritmo para acertar o acorde.",
+          "solucao": "Continue batendo, mesmo com o acorde incompleto, e acerte na volta. O ritmo não pode parar."
+        },
+        {
+          "problema": "Soltar todos os dedos ao mesmo tempo.",
+          "solucao": "Deixe os dedos prontos sobre o próximo acorde antes de soltar o anterior e leve-os juntos."
+        }
+      ],
+      "desafio": "Faça 8 trocas seguidas entre G e C a 60 BPM, sem parar o ritmo e sem consultar o diagrama.",
+      "criterioAvancar": "Avance quando fizer 8 trocas seguidas sem parar, mesmo que um acorde saia imperfeito."
+    }
+  ]
+}

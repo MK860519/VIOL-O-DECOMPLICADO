@@ -1,0 +1,159 @@
+{
+  "id": "m01",
+  "aulas": [
+    {
+      "id": "m01-a01",
+      "titulo": "As partes do violão",
+      "duracaoMin": 8,
+      "objetivo": "Você vai saber o nome das partes do violão e como as 6 cordas são numeradas.",
+      "introducao": "Antes de tocar a primeira nota, vamos conhecer o instrumento que vai acompanhar você.",
+      "explicacao": "O violão tem corpo (a caixa que amplifica o som), braço (com as casas) e cabeça (com as tarraxas). Ele tem 6 cordas, numeradas de 1 a 6, da mais fina e aguda para a mais grossa e grave.",
+      "conteudo": [
+        {
+          "tipo": "passos",
+          "itens": [
+            "Corpo: a boca e o cavalete ajudam o som a ganhar volume.",
+            "Braço: as casas são numeradas a partir da cabeça; a casa 1 é a mais próxima dela.",
+            "Cabeça e tarraxas: giram para esticar ou afrouxar cada corda."
+          ]
+        },
+        {
+          "tipo": "dica",
+          "texto": "Segurando o violão para tocar, a 6ª corda (a mais grossa) fica mais perto do seu rosto."
+        },
+        {
+          "tipo": "exemplo",
+          "texto": "Se alguém pedir 'toque a 3ª corda', conte da mais fina para a mais grossa: 1ª, 2ª, 3ª. É a corda Sol."
+        }
+      ],
+      "pratica": {
+        "orientacao": "Com o violão na mão, toque cada corda solta da 6ª para a 1ª, dizendo o número em voz alta. Repita 3 vezes.",
+        "minutos": 3,
+        "exercicios": [
+          "Aponte e diga o nome de cada parte: corpo, boca, braço, casas, cabeça e tarraxas.",
+          "Toque a 3ª, a 5ª e a 1ª corda, nessa ordem.",
+          "Passe o dedo pelo braço contando as casas, da cabeça até onde o braço encontra o corpo."
+        ]
+      },
+      "errosComuns": [
+        {
+          "problema": "Achar que a 1ª corda é a mais grossa.",
+          "solucao": "A 1ª é sempre a mais fina. Ao tocar da 6ª para a 1ª, você vai da mais grossa para a mais fina."
+        },
+        {
+          "problema": "Contar as casas a partir do corpo do violão.",
+          "solucao": "As casas são contadas a partir da cabeça: a casa 1 é a mais próxima das tarraxas."
+        }
+      ],
+      "desafio": "Sem olhar, toque a 2ª, a 6ª e a 4ª corda, nessa ordem, e diga o nome de duas partes do violão.",
+      "criterioAvancar": "Avance quando souber, sem hesitar, qual é a 1ª e qual é a 6ª corda e conseguir apontar o braço, as casas e as tarraxas."
+    },
+    {
+      "id": "m01-a02",
+      "titulo": "Postura e como segurar o violão",
+      "duracaoMin": 8,
+      "objetivo": "Você vai aprender a sentar e segurar o violão de forma confortável, sem tensão nos ombros e nos pulsos.",
+      "introducao": "Uma boa postura evita dor e deixa os movimentos mais livres desde o primeiro dia.",
+      "explicacao": "Sentado, com as costas retas e os ombros relaxados, apoie o violão na perna e deixe o braço do instrumento levemente inclinado para cima. O polegar da mão do braço fica atrás, sem apertar demais.",
+      "conteudo": [
+        {
+          "tipo": "passos",
+          "itens": [
+            "Sente-se na ponta da cadeira, com os pés apoiados no chão.",
+            "Apoie a curva do corpo do violão na coxa.",
+            "Relaxe o ombro e o cotovelo da mão que toca.",
+            "Mantenha o polegar atrás do braço, no meio dele."
+          ]
+        },
+        {
+          "tipo": "dica",
+          "texto": "Se sentir dor no pulso ou no ombro, pare e ajuste a posição."
+        },
+        {
+          "tipo": "exemplo",
+          "texto": "Faça uma checagem rápida de 4 itens: ombros baixos, costas retas, cotovelo da mão que toca solto e polegar atrás do braço. Se um item falhar, corrija antes de tocar."
+        }
+      ],
+      "pratica": {
+        "orientacao": "Fique 2 minutos na postura correta e toque as cordas soltas, sem pressa, observando se alguma parte do corpo está tensa.",
+        "minutos": 3,
+        "exercicios": [
+          "Sente-se, ajuste a postura e toque a 1ª corda solta 4 vezes.",
+          "Faça uma pausa de 10 segundos, balance as mãos e confira a postura de novo.",
+          "Toque por 1 minuto observando se o ombro sobe ou o pulso trava."
+        ]
+      },
+      "errosComuns": [
+        {
+          "problema": "O ombro sobe até perto da orelha.",
+          "solucao": "Solte o ar devagar e deixe o ombro cair. Se voltar a subir, apoie melhor o violão na perna."
+        },
+        {
+          "problema": "O violão escorrega.",
+          "solucao": "Incline o corpo do violão levemente para trás e apoie o antebraço da mão que toca na borda do corpo."
+        }
+      ],
+      "desafio": "Fique 2 minutos tocando cordas soltas e termine sem dor nem tensão nos ombros, no pescoço e nos pulsos.",
+      "criterioAvancar": "Avance quando conseguir segurar o violão sem apoiá-lo com a mão do braço e sem sentir dor ou tensão."
+    },
+    {
+      "id": "m01-a03",
+      "titulo": "Afinando o violão",
+      "duracaoMin": 10,
+      "objetivo": "Você vai aprender a afinar as 6 cordas usando o afinador do aplicativo.",
+      "introducao": "Um violão desafinado soa mal, por melhor que você toque. Afinar é o primeiro hábito de todo violonista.",
+      "explicacao": "As cordas soltas, da 6ª para a 1ª, são Mi, Lá, Ré, Sol, Si e Mi (E, A, D, G, B, E). Gire a tarraxa devagar até a nota do afinador ficar centralizada.",
+      "conteudo": [
+        {
+          "tipo": "texto",
+          "texto": "Para a nota subir (ficar mais aguda), a corda precisa ser esticada; para descer, afrouxada. O sentido de giro varia de violão para violão: gire um pouquinho e veja no afinador se a nota subiu ou desceu. Gire sempre bem devagar: girar demais de uma vez pode arrebentar a corda."
+        },
+        {
+          "tipo": "passos",
+          "itens": [
+            "Abra o afinador do aplicativo e permita o microfone.",
+            "Toque uma corda solta e observe a nota indicada.",
+            "Gire a tarraxa aos poucos até a agulha ficar no centro.",
+            "Repita com todas as cordas e confira a primeira de novo."
+          ]
+        },
+        {
+          "tipo": "dica",
+          "texto": "Prefira chegar à nota subindo (apertando a corda): ela fica mais estável."
+        },
+        {
+          "tipo": "exemplo",
+          "texto": "Se ao tocar a 5ª corda (que deve ser Lá) o afinador indicar Sol, a corda está baixa: gire a tarraxa devagar para esticar até aparecer Lá."
+        }
+      ],
+      "pratica": {
+        "orientacao": "Afine as 6 cordas com o afinador do aplicativo. Se alguma sair do lugar, repita a afinação dela.",
+        "minutos": 5,
+        "ferramenta": {
+          "tipo": "afinador"
+        },
+        "exercicios": [
+          "Afine a 6ª corda (Mi) e confira com o afinador.",
+          "Afine as demais, nesta ordem: 5ª, 4ª, 3ª, 2ª e 1ª.",
+          "Volte à 6ª corda e verifique se continua afinada."
+        ]
+      },
+      "errosComuns": [
+        {
+          "problema": "Girar a tarraxa para o lado errado e a nota se afastar.",
+          "solucao": "Gire só um pouquinho e olhe o afinador: se a nota se afastou, gire para o outro lado."
+        },
+        {
+          "problema": "Apertar demais e a corda ficar muito tensa.",
+          "solucao": "Gire devagar e pare quando a nota se aproximar. Nunca gire sem olhar o afinador."
+        },
+        {
+          "problema": "O afinador não reconhece a nota.",
+          "solucao": "Afaste ruídos, toque uma corda por vez e deixe-a soar. Aproxime o celular do violão."
+        }
+      ],
+      "desafio": "Afine as 6 cordas em menos de 5 minutos, com o afinador indicando 'afinada' em todas.",
+      "criterioAvancar": "Avance quando as 6 cordas estiverem afinadas e você souber para que lado girar cada tarraxa para subir ou descer a nota."
+    }
+  ]
+}

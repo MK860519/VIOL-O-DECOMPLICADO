@@ -1,0 +1,199 @@
+{
+  "id": "m03",
+  "aulas": [
+    {
+      "id": "m03-a01",
+      "titulo": "Acorde de Em (Mi menor)",
+      "duracaoMin": 10,
+      "objetivo": "Você vai aprender o seu primeiro acorde, o Mi menor (Em), e entender o que significa 'menor'.",
+      "introducao": "O Mi menor é um dos acordes mais fáceis e aparece em muitas músicas.",
+      "explicacao": "Ele usa apenas dois dedos, nas casas 2 das cordas 5 e 4. Todas as 6 cordas são tocadas.",
+      "conteudo": [
+        {
+          "tipo": "acorde",
+          "nome": "Em",
+          "cordas": [
+            0,
+            2,
+            2,
+            0,
+            0,
+            0
+          ],
+          "dedos": [
+            0,
+            2,
+            3,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "tipo": "texto",
+          "texto": "Acordes podem ser maiores ou menores. É como o 'humor' do acorde: o menor soa mais sério, mais triste; o maior soa mais aberto e alegre. Por isso o nome 'Mi menor'. Na cifra ele aparece como Em: a letra 'm' indica menor."
+        },
+        {
+          "tipo": "passos",
+          "itens": [
+            "Dedo 2 na 5ª corda, casa 2.",
+            "Dedo 3 na 4ª corda, casa 2.",
+            "Toque as 6 cordas, uma de cada vez, para conferir se nenhuma abafa."
+          ]
+        },
+        {
+          "tipo": "exemplo",
+          "texto": "Ao ver 'Em' numa cifra, monte o acorde e toque as 6 cordas. Se uma delas soar abafada, levante um pouco o dedo que encosta nela."
+        }
+      ],
+      "pratica": {
+        "orientacao": "Monte o acorde, toque cada corda separada e corrija as que estiverem com zumbido. Repita 5 vezes, soltando a mão entre as tentativas.",
+        "minutos": 5,
+        "exercicios": [
+          "Monte o Em e toque as 6 cordas, uma de cada vez, 3 vezes.",
+          "Solte a mão e monte o acorde de novo, 10 vezes, sem olhar para o braço.",
+          "Toque o Em com uma batida para baixo e deixe soar por 4 tempos, 5 vezes."
+        ]
+      },
+      "errosComuns": [
+        {
+          "problema": "Alguma corda soa abafada.",
+          "solucao": "Os dedos estão encostando nas cordas vizinhas. Curve mais os dedos e levante um pouco o cotovelo."
+        },
+        {
+          "problema": "Os dedos 2 e 3 trocam de lugar.",
+          "solucao": "O dedo 2 fica na corda mais grossa (5ª) e o dedo 3 na 4ª."
+        }
+      ],
+      "desafio": "Monte o Em 10 vezes seguidas sem olhar para o braço, com pelo menos 8 das montagens soando limpas.",
+      "criterioAvancar": "Avance quando montar o Em em até 3 segundos e as 6 cordas soarem limpas na maioria das vezes."
+    },
+    {
+      "id": "m03-a02",
+      "titulo": "Acorde de Am (Lá menor)",
+      "duracaoMin": 10,
+      "objetivo": "Você vai aprender o Lá menor (Am) e a tocar só da 5ª corda até a 1ª.",
+      "introducao": "O Lá menor (Am) também é um acorde menor, parecido com o Mi menor que você já sabe: os dedos 2 e 3 formam o mesmo desenho, só que uma corda mais perto das cordas finas.",
+      "explicacao": "Toque da 5ª corda até a 1ª; a 6ª fica de fora. Os dedos formam uma pequena escada: o dedo 1 na casa 1 e os dedos 2 e 3 na casa 2. Se você sabe montar o Em, mova os dedos 2 e 3 uma corda em direção às cordas finas e acrescente o dedo 1.",
+      "conteudo": [
+        {
+          "tipo": "acorde",
+          "nome": "Am",
+          "cordas": [
+            -1,
+            0,
+            2,
+            2,
+            1,
+            0
+          ],
+          "dedos": [
+            0,
+            0,
+            2,
+            3,
+            1,
+            0
+          ]
+        },
+        {
+          "tipo": "passos",
+          "itens": [
+            "Dedo 1 na 2ª corda, casa 1.",
+            "Dedo 2 na 4ª corda, casa 2.",
+            "Dedo 3 na 3ª corda, casa 2.",
+            "Toque da 5ª corda até a 1ª."
+          ]
+        },
+        {
+          "tipo": "exemplo",
+          "texto": "Compare Em e Am: os dois têm dois dedos na casa 2, mas o Am tem um dedo extra na casa 1 e não usa a 6ª corda."
+        }
+      ],
+      "pratica": {
+        "orientacao": "Monte o acorde, toque as 5 cordas e solte. Repita 5 vezes, tentando acertar os dedos de primeira.",
+        "minutos": 5,
+        "exercicios": [
+          "Monte o Am e toque da 5ª à 1ª corda, 5 vezes.",
+          "Alterne Em e Am, uma batida para baixo em cada, 8 trocas, devagar.",
+          "Toque o Am corda por corda e confira se alguma abafa."
+        ]
+      },
+      "errosComuns": [
+        {
+          "problema": "A 6ª corda soa e deixa o acorde 'sujo'.",
+          "solucao": "Comece a batida na 5ª corda e evite a 6ª."
+        },
+        {
+          "problema": "O dedo 1 abafa a 1ª corda.",
+          "solucao": "Curve o dedo 1 e pressione só a 2ª corda, na casa 1, com a ponta."
+        }
+      ],
+      "desafio": "Alterne Em e Am 8 vezes, sem parar, uma batida para baixo em cada acorde, com a troca no ritmo.",
+      "criterioAvancar": "Avance quando montar o Am sem consultar o diagrama e trocar entre Em e Am sem pausa maior que 3 segundos."
+    },
+    {
+      "id": "m03-a03",
+      "titulo": "Acorde de E (Mi maior)",
+      "duracaoMin": 10,
+      "objetivo": "Você vai aprender o Mi maior (E) e ouvir a diferença entre um acorde maior e um menor.",
+      "introducao": "O Mi maior é quase igual ao Mi menor, mas com um dedo a mais, e o som fica mais brilhante.",
+      "explicacao": "Parta do Em e acrescente o dedo 1 na 3ª corda, casa 1. Esse único dedo muda o acorde de menor para maior.",
+      "conteudo": [
+        {
+          "tipo": "acorde",
+          "nome": "E",
+          "cordas": [
+            0,
+            2,
+            2,
+            1,
+            0,
+            0
+          ],
+          "dedos": [
+            0,
+            2,
+            3,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "tipo": "passos",
+          "itens": [
+            "Monte o Em.",
+            "Acrescente o dedo 1 na 3ª corda, casa 1.",
+            "Toque as 6 cordas e compare com o Em."
+          ]
+        },
+        {
+          "tipo": "exemplo",
+          "texto": "De Em para E, só um dedo entra: o dedo 1, na 3ª corda, casa 1. É a única diferença no formato."
+        }
+      ],
+      "pratica": {
+        "orientacao": "Alterne devagar entre Em e E, ouvindo a diferença. Faça 8 trocas sem pressa.",
+        "minutos": 6,
+        "exercicios": [
+          "Monte o E e toque as 6 cordas, 5 vezes.",
+          "Alterne Em e E: monte o Em, acrescente o dedo 1, tire o dedo 1; 8 vezes.",
+          "Toque E e Em, uma batida em cada, e diga qual soa mais brilhante."
+        ]
+      },
+      "errosComuns": [
+        {
+          "problema": "O dedo 1 abafa a 2ª corda.",
+          "solucao": "Curve o dedo 1 e use a ponta. Ele deve pressionar só a 3ª corda."
+        },
+        {
+          "problema": "A 3ª corda não soa.",
+          "solucao": "O dedo 1 está longe do traste ou sem força: pressione perto do traste da casa 1."
+        }
+      ],
+      "desafio": "Alterne Em e E por 8 trocas e diga em voz alta qual é maior e qual é menor a cada troca.",
+      "criterioAvancar": "Avance quando conseguir trocar entre Em e E com o dedo 1 no lugar certo e reconhecer qual soa mais brilhante."
+    }
+  ]
+}

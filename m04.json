@@ -1,0 +1,179 @@
+{
+  "id": "m04",
+  "aulas": [
+    {
+      "id": "m04-a01",
+      "titulo": "Pulso e compasso",
+      "duracaoMin": 8,
+      "objetivo": "Você vai entender o que são pulso, tempo e compasso e aprender a contar 1-2-3-4.",
+      "introducao": "O ritmo é o que faz uma sequência de notas virar música. Você já seguiu os cliques do metrônomo; agora vai entender o que eles marcam.",
+      "explicacao": "O pulso é a batida constante, como o relógio. Em compasso 4/4, contamos 1-2-3-4 e voltamos ao 1. O primeiro tempo é o mais forte.",
+      "conteudo": [
+        {
+          "tipo": "passos",
+          "itens": [
+            "Abra o metrônomo e escolha 60 BPM em 4/4.",
+            "Bata palmas junto com cada clique.",
+            "Conte em voz alta: 1, 2, 3, 4.",
+            "Dê mais ênfase ao 1."
+          ]
+        },
+        {
+          "tipo": "exemplo",
+          "texto": "A 60 BPM o clique cai uma vez por segundo. Conte 1-2-3-4 e volte ao 1, sempre no mesmo clique, dando mais força ao 1."
+        }
+      ],
+      "pratica": {
+        "orientacao": "Pratique 3 minutos contando em voz alta junto com o metrônomo. Depois diminua e aumente a velocidade.",
+        "minutos": 4,
+        "ferramenta": {
+          "tipo": "metronomo",
+          "bpm": 60,
+          "compasso": 4
+        },
+        "exercicios": [
+          "Com o metrônomo em 60 BPM e 4/4, bata palmas em todos os cliques por 1 minuto.",
+          "Conte em voz alta 1-2-3-4, destacando o 1, por mais 1 minuto.",
+          "Aumente para 70 BPM e repita."
+        ]
+      },
+      "errosComuns": [
+        {
+          "problema": "Perder-se na contagem e esquecer onde está o 1.",
+          "solucao": "No metrônomo o 1 tem um som mais agudo. Ouça-o e recomece a contagem nele."
+        },
+        {
+          "problema": "Acelerar sem perceber.",
+          "solucao": "Mantenha os cliques do metrônomo; se ficar à frente, pare e recomece mais devagar."
+        }
+      ],
+      "desafio": "Bata palmas no ritmo por 2 minutos a 60 BPM, contando 1-2-3-4 em voz alta e acentuando o 1, sem se perder.",
+      "criterioAvancar": "Avance quando contar 1-2-3-4 acompanhando o metrônomo por 2 minutos sem se perder."
+    },
+    {
+      "id": "m04-a02",
+      "titulo": "Batida básica para baixo",
+      "duracaoMin": 10,
+      "objetivo": "Você vai fazer a sua primeira batida: uma batida para baixo em cada tempo, no acorde de Em.",
+      "introducao": "Com uma batida simples, você já consegue acompanhar muitas músicas.",
+      "explicacao": "Uma batida para baixo em cada tempo, usando o Em, dá quatro batidas por compasso. O braço fica solto e o movimento sai do pulso.",
+      "conteudo": [
+        {
+          "tipo": "acorde",
+          "nome": "Em",
+          "cordas": [
+            0,
+            2,
+            2,
+            0,
+            0,
+            0
+          ],
+          "dedos": [
+            0,
+            2,
+            3,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "tipo": "passos",
+          "itens": [
+            "Monte o Em.",
+            "Passe a palheta (ou o polegar) para baixo em cada clique.",
+            "Conte 1-2-3-4 e mantenha as batidas iguais."
+          ]
+        },
+        {
+          "tipo": "exemplo",
+          "texto": "Com o Em, uma batida para baixo por clique dá 4 batidas por compasso: 1 (↓), 2 (↓), 3 (↓), 4 (↓)."
+        }
+      ],
+      "pratica": {
+        "orientacao": "Toque o Em por 8 compassos seguidos, uma batida para baixo por tempo, sem parar.",
+        "minutos": 6,
+        "ferramenta": {
+          "tipo": "metronomo",
+          "bpm": 60,
+          "compasso": 4
+        },
+        "exercicios": [
+          "Toque 4 compassos de Em, uma batida por clique, a 60 BPM.",
+          "Repita com o Am.",
+          "Toque 8 compassos sem parar, mesmo se errar um acorde."
+        ]
+      },
+      "errosComuns": [
+        {
+          "problema": "As batidas ficam com volumes diferentes.",
+          "solucao": "Relaxe o pulso e repita o mesmo movimento em todas as batidas."
+        },
+        {
+          "problema": "A mão para entre as batidas.",
+          "solucao": "Pense num pêndulo: a mão vai e volta no ritmo, mesmo quando não toca."
+        },
+        {
+          "problema": "Sem palheta, as batidas ficam fracas.",
+          "solucao": "Passe o polegar para baixo nas cordas, com a mão solta e o pulso relaxado, ou use as costas das unhas."
+        }
+      ],
+      "desafio": "Toque 8 compassos de Em, uma batida por clique a 60 BPM, sem errar o tempo nenhuma vez.",
+      "criterioAvancar": "Avance quando mantiver o ritmo por 8 compassos seguidos, sem parar e sem acelerar."
+    },
+    {
+      "id": "m04-a03",
+      "titulo": "Batida baixo-cima",
+      "duracaoMin": 12,
+      "objetivo": "Você vai aprender a alternar batidas para baixo e para cima no ritmo.",
+      "introducao": "Alternar batidas para baixo e para cima dá movimento e leveza ao ritmo.",
+      "explicacao": "Conte 1 e 2 e 3 e 4 e. Cada número cai para baixo e cada 'e' vai para cima. Nos tempos 1 e 3, bata para baixo; nos tempos 2 e 4, bata para baixo e para cima.",
+      "conteudo": [
+        {
+          "tipo": "passos",
+          "itens": [
+            "Tempo 1: para baixo.",
+            "Tempo 2: para baixo e para cima.",
+            "Tempo 3: para baixo.",
+            "Tempo 4: para baixo e para cima."
+          ]
+        },
+        {
+          "tipo": "dica",
+          "texto": "A mão não para de se mover: quando não toca as cordas, passa ao lado delas."
+        },
+        {
+          "tipo": "exemplo",
+          "texto": "Conte '1  2 e  3  4 e'. No 1 e no 3, uma batida para baixo; no 2 e no 4, uma para baixo (no número) e outra para cima (no 'e')."
+        }
+      ],
+      "pratica": {
+        "orientacao": "Pratique com o Em, devagar, por 5 minutos. Aumente o metrônomo de 5 em 5 BPM só quando estiver sem erros.",
+        "minutos": 8,
+        "ferramenta": {
+          "tipo": "metronomo",
+          "bpm": 70,
+          "compasso": 4
+        },
+        "exercicios": [
+          "Sem violão, bata a mão no joelho: baixo no 1, baixo-cima no 2, baixo no 3, baixo-cima no 4, a 60 BPM, por 1 minuto.",
+          "Toque o padrão no Em por 2 minutos a 60 BPM.",
+          "Passe para o Am e depois suba para 70 BPM."
+        ]
+      },
+      "errosComuns": [
+        {
+          "problema": "A mão para nas batidas para cima.",
+          "solucao": "A mão não para: ela sobe e desce o tempo todo. Quando não toca, passa ao lado das cordas."
+        },
+        {
+          "problema": "Perder o 'e' da contagem.",
+          "solucao": "Conte em voz alta '1 e 2 e 3 e 4 e' e leve a mão para cima em todo 'e', mesmo sem tocar nas cordas."
+        }
+      ],
+      "desafio": "Toque 4 compassos do padrão no Em a 70 BPM sem parar e sem perder a contagem.",
+      "criterioAvancar": "Avance quando mantiver o padrão por 2 minutos seguidos, sem errar a contagem e sem tensão no pulso."
+    }
+  ]
+}
