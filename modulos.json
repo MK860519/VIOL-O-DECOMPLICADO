@@ -1,0 +1,85 @@
+{
+  "conteudoVersao": 2,
+  "modulos": [
+    {
+      "id": "m01",
+      "titulo": "Conhecendo o violão",
+      "nivel": "Absoluto zero",
+      "resumo": "Partes do instrumento, postura correta e afinação.",
+      "arquivo": "modulos/m01.json",
+      "origem": "rascunho"
+    },
+    {
+      "id": "m02",
+      "titulo": "Primeiros sons",
+      "nivel": "Iniciante",
+      "resumo": "Cordas soltas, palheta e primeiros movimentos das duas mãos.",
+      "arquivo": "modulos/m02.json",
+      "origem": "rascunho"
+    },
+    {
+      "id": "m03",
+      "titulo": "Primeiros acordes",
+      "nivel": "Iniciante",
+      "resumo": "Três acordes fáceis para começar a acompanhar música.",
+      "arquivo": "modulos/m03.json",
+      "origem": "rascunho"
+    },
+    {
+      "id": "m04",
+      "titulo": "Ritmo e batida",
+      "nivel": "Iniciante",
+      "resumo": "Pulso, compasso e as primeiras batidas com a mão direita.",
+      "arquivo": "modulos/m04.json",
+      "origem": "rascunho"
+    },
+    {
+      "id": "m05",
+      "titulo": "Trocas de acordes",
+      "nivel": "Iniciante",
+      "resumo": "Mais quatro acordes e a técnica de trocar sem perder o ritmo.",
+      "arquivo": "modulos/m05.json",
+      "origem": "rascunho"
+    },
+    {
+      "id": "m06",
+      "titulo": "Primeiras músicas",
+      "nivel": "Iniciante",
+      "resumo": "Cifras, progressões comuns e a sua primeira música completa.",
+      "arquivo": "modulos/m06.json",
+      "origem": "rascunho"
+    },
+    {
+      "id": "m07",
+      "titulo": "Notas e melodias",
+      "nivel": "Intermediário",
+      "resumo": "Tablatura, notas na 1ª corda e a escala de Dó maior.",
+      "arquivo": "modulos/m07.json",
+      "origem": "rascunho"
+    },
+    {
+      "id": "m08",
+      "titulo": "Pestana e o acorde F",
+      "nivel": "Intermediário",
+      "resumo": "A pestana e os primeiros acordes que a usam.",
+      "arquivo": "modulos/m08.json",
+      "origem": "rascunho"
+    },
+    {
+      "id": "m09",
+      "titulo": "Ritmos e dedilhado",
+      "nivel": "Intermediário",
+      "resumo": "Abafamento, dedilhado e compasso em 3/4.",
+      "arquivo": "modulos/m09.json",
+      "origem": "rascunho"
+    },
+    {
+      "id": "m10",
+      "titulo": "Evoluindo",
+      "nivel": "Avançado",
+      "resumo": "Escala pentatônica, improviso e plano de estudo contínuo.",
+      "arquivo": "modulos/m10.json",
+      "origem": "rascunho"
+    }
+  ]
+}
