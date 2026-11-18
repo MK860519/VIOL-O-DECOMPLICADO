@@ -1,0 +1,25 @@
+# Violão Descomplicado Melky — versão 3.0 (com assinatura Asaas)
+
+## IMPORTANTE: publique por GitHub, não por arrastar arquivos
+Funções (pasta netlify/functions) precisam de deploy completo. Crie um repositório no GitHub (pelo site, enviando todos os arquivos
+mantendo as pastas), e na Netlify use "Add new site > Import from Git". Arrastar só os arquivos NÃO ativa a cobrança.
+
+## Variáveis de ambiente (Netlify > Site configuration > Environment variables)
+ASAAS_API_KEY  = chave de API gerada no Asaas (começa com $aact_). NUNCA coloque em arquivo ou mande a ninguém.
+ASAAS_ENV      = sandbox  (para testar)  |  prod  (valendo dinheiro)
+PRECO          = 19.90    (valor mensal, com ponto)
+SEGREDO        = uma frase longa e aleatória qualquer (assina o acesso)
+Chave de sandbox e de produção são diferentes; troque ao mudar ASAAS_ENV. Depois de alterar variáveis, faça um novo deploy.
+
+## Teste antes de vender
+1. Com ASAAS_ENV=sandbox, assine com um CPF de teste válido e pague pela página do Asaas (no sandbox você confirma o pagamento pelo painel).
+2. Toque em "Liberar meu acesso". As abas 🔒 devem destravar.
+
+## Como funciona
+- assinar: cria cliente e assinatura mensal no Asaas (cliente escolhe Pix, cartão ou boleto) e devolve o link de pagamento.
+- entrar: confere no Asaas se há assinatura ativa e pagamento nos últimos 35 dias e libera 31 dias neste aparelho.
+- Cancelou ou parou de pagar: o acesso expira sozinho ao fim do período já liberado.
+
+## Limite desta versão
+O bloqueio é feito no próprio app (no navegador). Alguém com conhecimento técnico consegue burlar. Serve para o público comum;
+para proteção forte seria preciso servir o conteúdo pago pelo servidor.

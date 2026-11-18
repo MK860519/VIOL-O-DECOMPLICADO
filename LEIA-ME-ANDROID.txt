@@ -1,0 +1,22 @@
+# Instalar como app no Android
+
+## Jeito 1 (mais simples, grátis): instalar direto do Chrome
+1. Publique o site (Netlify) e abra o endereço no Chrome do celular.
+2. Vai aparecer a barra "Instale o app" -> toque em Instalar.
+   Se não aparecer: Chrome > ⋮ > "Instalar app".
+3. O ícone ♫ vai para a tela inicial e abre em tela cheia, sem barra do navegador, e funciona offline.
+
+## Jeito 2: gerar um arquivo APK (para mandar por WhatsApp ou publicar na Play Store)
+1. Com o site já no ar em https://SEU-SITE.netlify.app, abra https://www.pwabuilder.com
+2. Cole o endereço do site > Start > "Package for stores" > Android.
+3. Preencha o nome do pacote (ex.: br.com.melky.violao) e baixe o .zip.
+4. No zip vem o APK (para instalar direto), o .aab (para Play Store) e um arquivo assetlinks.json.
+5. Copie o conteúdo do assetlinks.json para o arquivo .well-known/assetlinks.json deste projeto
+   (já existe uma pasta .well-known com um modelo), publique de novo e pronto:
+   isso tira a barra de endereço de dentro do app.
+6. Guarde o arquivo de assinatura (.keystore) e a senha que o PWABuilder entregar: sem eles não dá para atualizar o app depois.
+Para instalar o APK no celular é preciso permitir "instalar apps de fontes desconhecidas".
+
+## Atenção
+A pasta netlify/functions (assinar.js e entrar.js) NÃO veio nos arquivos enviados. Sem ela a cobrança do Asaas não funciona.
+Coloque essa pasta no repositório do GitHub junto com os demais arquivos.
