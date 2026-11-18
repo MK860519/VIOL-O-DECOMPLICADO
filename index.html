@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Aprenda Violão · Violão Descomplicado</title>
+<title>Metrônomo · Violão Descomplicado</title>
 <meta name="theme-color" content="#0b120e">
 <link rel="manifest" href="../manifest.webmanifest">
 <link rel="icon" href="../icons/icon-192.png">
@@ -11,12 +11,40 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
 <link rel="stylesheet" href="../css/base.css">
-<link rel="stylesheet" href="jornada.css">
+<link rel="stylesheet" href="metronomo.css">
 </head>
 <body>
-<main id="app"><p class="carregando">Carregando…</p></main>
-<noscript><p class="aviso">Ative o JavaScript para usar a área de aprendizagem.</p></noscript>
-<script type="module" src="js/app.js"></script>
+<nav class="voltar"><a href="../">‹ Início</a></nav>
+<h1>Metrônomo</h1>
+<section class="display" aria-live="off">
+  <div class="beats" id="beats" aria-hidden="true"></div>
+  <div class="bpm"><span id="bpmNum">100</span><small>BPM</small></div>
+  <div class="tempo" id="tempoName"></div>
+</section>
+<section class="adjust">
+  <button id="menos" aria-label="Diminuir BPM">−</button>
+  <input id="slider" type="range" min="40" max="240" step="1" value="100" aria-label="Velocidade em BPM">
+  <button id="mais" aria-label="Aumentar BPM">+</button>
+</section>
+<section>
+  <h2>Compasso</h2>
+  <div class="seg" id="compasso" role="group" aria-label="Compasso">
+    <button data-beats="2" aria-pressed="false">2/4</button>
+    <button data-beats="3" aria-pressed="false">3/4</button>
+    <button data-beats="4" aria-pressed="true">4/4</button>
+  </div>
+</section>
+<section>
+  <h2>Para iniciantes</h2>
+  <div class="seg presets" id="presets" role="group" aria-label="Velocidades para iniciantes">
+    <button data-bpm="50">50<small>bem lento</small></button>
+    <button data-bpm="60">60<small>devagar</small></button>
+    <button data-bpm="70">70<small>calmo</small></button>
+    <button data-bpm="80">80<small>moderado</small></button>
+  </div>
+</section>
+<button id="play" class="play" aria-pressed="false">Iniciar</button>
+<script src="metronomo.js"></script>
 <script src="../js/pwa.js"></script>
 </body>
 </html>
